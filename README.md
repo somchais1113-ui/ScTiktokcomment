@@ -1,4 +1,9 @@
-# V2.1.19 — Three Position Controls
+# V2.1.21 — Transform / Layout controls
+
+- Transform is always expanded when an object is selected. Layout is a collapsible section, closed by default. All four position buttons and existing rendering logic are unchanged.
+- Service worker cache updated to v2121.
+
+# V2.1.20 — Three Position Controls
 
 Transform now displays only Top Center, Center, Bottom Center in one row. Existing position logic (top 2%, bottom 18%, subject to object size), logo placement, and all other functionality are unchanged.
 
@@ -127,3 +132,6 @@ The new icon is an original **SC** mark inspired by the energetic dual-color lay
 
 
 - ปรับตำแหน่งเริ่มต้นของคอมเมนต์ให้เยื้องซ้ายเล็กน้อย เพื่อลดการบังพื้นที่ด้านขวา
+
+
+- เพิ่มปุ่ม Position แบบพิเศษ “วางใต้โลโก้” เป็นปุ่มแรก สีส้ม และจะใช้งานได้เมื่อมี Canvas logo อยู่บนหน้าเท่านั้น
