@@ -1,3 +1,8 @@
+# SC Comment Studio V2.1.5 — Unified Master Icon
+
+All favicon, header and PWA icon artwork is rendered from the exact supplied `icon-source.svg`. The iOS and maskable PWA PNGs use an opaque dark background for platform cropping; the ordinary favicon and PWA icon variants preserve the master artwork's transparent corners. The editor and content logo are unchanged. Deploy the entire folder; existing Home Screen shortcuts may need to be removed and added again. Cache version: v215. The separate standalone HTML is for local preview.
+
+## Previous release notes
 # SC Comment Studio V2.1.4 — Header Icon Update
 
 - Header now uses the existing SC app icon (`icon-192.png`), in both themes and all screen sizes.
