@@ -25,7 +25,7 @@ function restore(s){state=JSON.parse(s);if(!current())selected=state.objects.at(
 function undo(){if(!history.length)return;future.push(snapshot());restore(history.pop());updateHistory()}function redo(){if(!future.length)return;history.push(snapshot());restore(future.pop());updateHistory()}
 function status(t,error=false){$('status').textContent=t;$('status').classList.toggle('error',error)}
 function choose(id){selected=id;bgOpen=false;sync()}
-function fitCanvas(){let o=current(),single=mode==='single'&&(o?.kind==='comment'?o:comments()[0]);let w=single?640:state.w,h=single?metrics(single).H:state.h;let scale=zoom||Math.min((stage.clientWidth-48)/w,(stage.clientHeight-48)/h,1);scale=clamp(scale,.035,3);C.style.width=`${Math.max(1,w*scale)}px`;C.style.height=`${Math.max(1,h*scale)}px`;$('zoomText').textContent=Math.round(scale*100)+'%';$('dimensions').textContent=`${w} × ${Math.round(h)} px`;schedule()}
+function fitCanvas(){let o=current(),single=mode==='single'&&(o?.kind==='comment'?o:comments()[0]);let w=single?640:state.w,h=single?metrics(single).H:state.h;let pad=getComputedStyle(stage);let availW=stage.clientWidth-parseFloat(pad.paddingLeft)-parseFloat(pad.paddingRight),availH=stage.clientHeight-parseFloat(pad.paddingTop)-parseFloat(pad.paddingBottom);let scale=zoom||Math.min(availW/w,availH/h,1);scale=clamp(scale,.035,3);C.style.width=`${Math.max(1,w*scale)}px`;C.style.height=`${Math.max(1,h*scale)}px`;$('zoomText').textContent=Math.round(scale*100)+'%';$('dimensions').textContent=`${w} × ${Math.round(h)} px`;schedule()}
 function anchor(rect,w,h,index,margin){let m=rect.w*margin/100,col=index%3,row=Math.floor(index/3);return {x:rect.x+(col===0?m:col===1?(rect.w-w)/2:rect.w-w-m),y:rect.y+(row===0?m:row===1?(rect.h-h)/2:rect.h-h-m)}}
 function placeLogo(o){if(o.scope!=='canvas')return;let ratio=o.ratio||2,w=state.w*o.size/100,h=w/ratio;if(h>state.h*.9){h=state.h*.9;w=h*ratio}let p=anchor({x:0,y:0,w:state.w,h:state.h},w,h,o.anchor,o.margin);Object.assign(o,p,{w,h})}
 function anchoredLogos(){logos().filter(o=>o.scope==='canvas'&&o.anchored).forEach(placeLogo)}
@@ -143,3 +143,25 @@ templateAction('templateReset',async()=>{if(!confirm('คืนค่า Factory
 $('newContent').onclick=()=>{if(comments().length&&!confirm('ล้างคำถามทั้งหมด แต่เก็บโลโก้ รูปประกอบ และพื้นหลังไว้? (Undo ได้)'))return;remember();state.objects=state.objects.filter(o=>o.kind!=='comment');for(let l of logos())if(l.scope==='one')l.target='';$('batchText').value='';$('batchReal').checked=false;selected=null;selectMode('multi');status('พร้อมสร้างเนื้อหาใหม่ — รักษาเทมเพลตเดิม')};
 async function startTemplates(){try{let saved;try{templateDB=await openTemplateDB();saved=await dbRead()}catch(e){templateDB=null}if(!saved)saved=readLocalTemplates();if(saved&&Array.isArray(saved.items)){let items=[];for(let t of saved.items)try{items.push(validateTemplate(t))}catch{}templateStore={items,defaultId:saved.defaultId||null,auto:saved.auto!==false}}if(templateStore.auto!==false)applyTemplate(getDefaultTemplate(),false,false);else applyTemplate(factoryTemplate(),false,false);templateList();}catch(e){status('โหลด Template ไม่สำเร็จ — ใช้ค่ามาตรฐาน',true)}finally{presetUI();sync();if(document.fonts)document.fonts.ready.then(()=>{comments().forEach(recalc);sync()})}}
 new ResizeObserver(fitCanvas).observe(stage);sync();startTemplates();
+
+// V2.1.1: Mobile/tablet workspace layout is a local UI preference, not project content.
+(function mobileWorkspace(){
+ const mq=matchMedia('(max-width:1050px), (max-width:1366px) and (pointer:coarse)');
+ const workspace=document.querySelector('.workspace'),center=workspace.querySelector('.center'),pane=$('toolsPane'),handle=$('workspaceSplit');
+ const key='sccomment.workspace.split.v1';let percent=55,gesture=null,raf=0,focusTimer=0;
+ try{const raw=localStorage.getItem(key);if(raw!==null&&Number.isFinite(Number(raw)))percent=clamp(Number(raw),30,75)}catch{}
+ function apply(v){percent=clamp(v,30,75);workspace.style.setProperty('--sc-split',percent+'%');handle.setAttribute('aria-valuenow',String(Math.round(percent)));handle.setAttribute('aria-valuetext',Math.round(percent)+'% Canvas');}
+ function save(){try{localStorage.setItem(key,String(percent))}catch{}}
+ function keepFieldVisible(){const a=document.activeElement;if(!mq.matches||!pane.contains(a)||!a.matches('input,textarea,select'))return;const r=a.getBoundingClientRect(),p=pane.getBoundingClientRect();if(r.bottom>p.bottom-12)pane.scrollTop+=r.bottom-p.bottom+12;else if(r.top<p.top+12)pane.scrollTop+=r.top-p.top-12;}
+ function viewport(){cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{if(!mq.matches){document.body.style.removeProperty('--sc-viewport-height');return}const v=window.visualViewport;const height=v&&Math.abs(v.scale-1)<.02?v.height:window.innerHeight;document.body.style.setProperty('--sc-viewport-height',Math.round(height)+'px');if(Math.abs(window.scrollY)>0)window.scrollTo(0,0);clearTimeout(focusTimer);focusTimer=setTimeout(keepFieldVisible,90);});}
+ apply(percent);viewport();window.addEventListener('resize',viewport,{passive:true});window.visualViewport?.addEventListener('resize',viewport,{passive:true});window.visualViewport?.addEventListener('scroll',viewport,{passive:true});if(mq.addEventListener)mq.addEventListener('change',viewport);else mq.addListener(viewport);
+ pane.addEventListener('focusin',()=>{clearTimeout(focusTimer);focusTimer=setTimeout(keepFieldVisible,120)});
+ handle.addEventListener('pointerdown',e=>{if(!mq.matches||e.button!==0)return;e.preventDefault();gesture={id:e.pointerId,y:e.clientY,start:center.getBoundingClientRect().height,base:Math.max(1,workspace.clientHeight)};handle.setPointerCapture(e.pointerId)});
+ handle.addEventListener('pointermove',e=>{if(gesture?.id===e.pointerId){apply((gesture.start+e.clientY-gesture.y)/gesture.base*100);e.preventDefault()}});
+ for(const t of ['pointerup','pointercancel','lostpointercapture'])handle.addEventListener(t,e=>{if(gesture?.id===e.pointerId){gesture=null;save()}});
+ handle.addEventListener('keydown',e=>{const v={ArrowUp:percent-5,ArrowDown:percent+5,Home:30,End:75}[e.key];if(v!==undefined){e.preventDefault();apply(v);save()}});
+ handle.addEventListener('dblclick',()=>{apply(55);save()});
+ // Background is opened from the pinned toolbar; reveal its editor without moving the canvas.
+ $('backgroundTab').addEventListener('click',()=>{if(mq.matches){const a=$('backgroundPanel');if(!a.hidden)pane.scrollTop+=a.getBoundingClientRect().top-pane.getBoundingClientRect().top-12;}});
+})();
+

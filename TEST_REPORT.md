@@ -1,3 +1,21 @@
+# V2.1.1 — Mobile Workspace Optimization | Test report
+
+## Verified in this revision (Chromium / Playwright)
+- Node syntax validation: app.js.
+- Mobile/tablet viewports: 390×844, 430×932, 768×1024, 1024×768, 1366×1024, 844×390, with mobile/touch emulation.
+- In each viewport: add a comment, scroll the lower tools pane to the bottom; header, center workspace, and canvas bounding boxes unchanged; document scrollY remains zero; lower pane scrollTop changes. Canvas stage and tools remain visible.
+- 390×844: edit Thai comment in lower panel and verify current object and fixed center; drag split handle, keyboard ArrowUp changes 55% to 50%; simulated storage reload restores preference. At reduced viewport 390×480, both panels remain visible and document does not scroll; background toolbar opens its editor in lower pane.
+- Desktop 1440×950: splitter hidden; left/center/right positions preserved.
+- Export composition PNG 1080×1920 verified after mobile changes.
+- Repeated V2.1 regression suite: V2.0 project import, template saving/export, New Content and Undo, simulated storage round trip, five Thai batch questions with unique avatar seeds, 2× transparent PNG 2160×3840 (alpha 0–255), template import/reset and custom factory template. No page errors in these suites.
+
+## Not verified / limitations
+- Browser policy blocked navigating to the test origin, so HTML/JS were loaded inline and storage was simulated; actual localStorage/IndexedDB persistence on Vercel is not verified.
+- Real iPhone/iPad Safari, on-device virtual keyboard and real finger gestures were not tested. Reduced viewport test is only a keyboard-height simulation. Small screens necessarily reduce the preview area; the splitter allows adjustment.
+- Existing V2.1 project/template format, storage keys and rendering/export engine preserved; no full exhaustive regression for every V2.0 feature.
+- Not deployed to the user's website. Preserve any customized factory-template.js when updating.
+
+## Previous V2.1 report (historical)
 # V2.1 Test Report
 
 ## Verified in this revision

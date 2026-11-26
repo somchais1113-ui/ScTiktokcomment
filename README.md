@@ -1,5 +1,16 @@
-# SC Comment Studio V2.1 — Personal Template Edition
+# SC Comment Studio V2.1.1 — Mobile Workspace Optimization
 **by SCWork · Dark Theme · Static web application**
+
+## V2.1.1 — Mobile / Tablet Fixed Workspace
+- Main Menu, Canvas Toolbar, Canvas และ Status Bar คงอยู่ด้านบนของพื้นที่ทำงาน; เลื่อนเฉพาะแผง Create / Layout / Layers / Properties ด้านล่าง
+- ลากตัวจับสีเทาตรงเส้นแบ่งขึ้นหรือลงเพื่อปรับขนาด Canvas (ตั้งต้น 55% ของพื้นที่หลัง Header, ปรับ 30–75% ตามพื้นที่จริง); ดับเบิลคลิกเพื่อคืน 55%; ใช้ Arrow Up/Down, Home/End ได้เมื่อ focus ตัวจับ
+- ระบบบันทึกสัดส่วนล่าสุดผ่าน localStorage ของเบราว์เซอร์ ถ้า storage ใช้งานไม่ได้ยังปรับได้ใน session ปัจจุบัน
+- Fit คำนวณจากพื้นที่ Canvas ที่มีอยู่จริงหลังหัก padding; Zoom / Drag / Resize / Rotate ยังคงทำงานแบบเดิม
+- ปรับตาม visualViewport เมื่อมีการเปิดคีย์บอร์ดหรือเปลี่ยนแนวหน้าจอ; แผงเครื่องมือพยายามเลื่อนไปหาช่องที่กำลังแก้ไข
+- Responsive layout ใช้เมื่อ viewport กว้างไม่เกิน 1050 CSS px หรืออุปกรณ์ pointer:coarse กว้างไม่เกิน 1366 CSS px (รวม tablet แนวนอน); จอ Desktop ขนาดใหญ่ยังใช้ 3 columns เดิม
+- อัปเดตเว็บไซต์: แทน index.html และ app.js ด้วยไฟล์ V2.1.1 โดยเก็บ factory-template.js ที่ตั้งค่าโลโก้จริงของคุณไว้หากเคยปรับไว้แล้ว แล้ว Deploy ใหม่; ไม่ต้องเปลี่ยน project/template JSON หรือ storage keys เดิม
+- เปิดใช้ V2.1.1 โดยไม่ต้องติดตั้ง dependencies; หากใช้ standalone HTML จะรวม factory-template.js ตัวอย่างและ app.js ไว้ในไฟล์เดียว
+- การทดสอบใช้ Chromium จำลองขนาด viewport และ storage; ยังไม่ได้ทดสอบ Safari/iPad จริงหรือ deploy บนเว็บ production
 
 ## V2.1 — ตั้งค่า Template ประจำเว็บ (เริ่มต้นที่นี่)
 1. เปิดเว็บ แล้วกำหนด Canvas, Background, เพิ่ม Logo และรูปประกอบตามต้องการ จัดตำแหน่งโลโก้ 9 จุดตามเดิม
