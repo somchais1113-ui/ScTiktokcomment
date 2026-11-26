@@ -13,7 +13,7 @@ html=html.replace('<head>','<head><script>Object.defineProperty(window,"localSto
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
  for w,h,m in [(390,844,True),(768,1024,True),(1440,900,False)]:
-  ctx=b.new_context(viewport={'width':w,'height':h},has_touch=m,is_mobile=m,accept_downloads=True);q=ctx.new_page();errors=[];q.on('pageerror',lambda e:errors.append(str(e)));q.on('dialog',lambda d:d.accept());q.set_content(html,wait_until="load");q.wait_for_function("state.templateName==='SCWork Q&A' && logos().length===1");q.locator('#addComment').click();q.locator('#comment').fill('ตัวอย่างคำถามสำหรับทดสอบตำแหน่ง');q.locator('#comment').blur();q.locator('#transformPanel summary').click();buttons=q.locator('#transformPositions button');assert buttons.count()==9
+  ctx=b.new_context(viewport={'width':w,'height':h},has_touch=m,is_mobile=m,accept_downloads=True);q=ctx.new_page();errors=[];q.on('pageerror',lambda e:errors.append(str(e)));q.on('dialog',lambda d:d.accept());q.set_content(html,wait_until="load");q.wait_for_function("state.templateName==='SCWork Q&A' && logos().length===1");q.locator('#addComment').click();q.locator('#comment').fill('ตัวอย่างคำถามสำหรับทดสอบตำแหน่ง');q.locator('#comment').blur();assert q.evaluate("document.getElementById('transformPanel').nextElementSibling === document.getElementById('layouts').parentElement && document.getElementById('layouts').parentElement.nextElementSibling === document.getElementById('layers').parentElement");assert not q.locator('#transformPanel').get_attribute('open');q.locator('#transformPanel summary').click();buttons=q.locator('#transformPositions button');assert buttons.count()==9
   assert q.locator('#x,#y,#width,#height').count()==0
   orig=q.evaluate('({w:current().w,h:current().h,rotation:current().rotation,comment:current().comment})')
   assert q.evaluate("""()=>{const o=current(),W=state.w,H=state.h;let a=o.rotation*Math.PI/180,bh=Math.abs(o.w*Math.sin(a))+Math.abs(o.h*Math.cos(a));return [6,7,8].every(i=>Math.abs(transformPosition(o,i).y+o.h/2+bh/2-(H-Math.min(H*.18,(H-bh)/2)))<.01)&&[0,1,2,3,4,5].every(i=>{let r=Math.floor(i/3),y=(r===0?Math.min(H*.05,(H-bh)/2)+bh/2:H/2)-o.h/2;return Math.abs(transformPosition(o,i).y-y)<.01})}""")
@@ -23,7 +23,7 @@ with sync_playwright() as p:
   q.locator('#rotation').fill('12');q.locator('#rotation').blur();buttons.nth(0).click();assert q.evaluate('current().rotation')==12;assert q.evaluate('current().w')==orig['w']
   q.locator('#locked').check();assert buttons.nth(0).is_disabled();q.locator('#locked').uncheck();assert buttons.nth(0).is_enabled();q.locator('#resetTransform').click();buttons.nth(3).click()
   # screenshot actual transform section
-  if w==390:q.locator('#transformPanel').screenshot(path='/mnt/data/sc_comment_v2113_position.png')
+  if w==390:q.locator('#transformPanel').screenshot(path='/mnt/data/sc_comment_v2116_position.png')
   q.locator('#exportOpen').click();q.locator('#exportType').select_option('transparent');
   with q.expect_download() as dl:q.locator('#exportGo').click()
   im=Image.open(dl.value.path());assert im.size==(1080,1920) and im.mode=='RGBA';assert not errors,errors

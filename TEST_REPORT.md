@@ -1,5 +1,5 @@
-# V2.1.13 — Bottom Safe Position
-- Node syntax checks: app.js and sw.js passed.
-- Chromium inline test harness: 390×844, 768×1024, 1440×900 passed. Verified bottom-row 18% clearance (subject to available space), six other vertical anchors unchanged, nine buttons, dimensions/rotation/text preserved, Undo/Redo, Lock and transparent PNG export at 1080×1920.
-- Browser tests use simulated storage. Live Vercel deployment, PWA installation and physical iOS/Safari not tested.
-- Existing saved positions are not migrated; press a bottom-row button to apply the new placement. Safe Zone is an estimate, not a guarantee against platform overlays.
+# V2.1.16 — Transform before Layout
+- JavaScript syntax checks passed (app.js and sw.js).
+- Chromium tests passed at 390×844, 768×1024 and 1440×900 with simulated storage: Transform before Layout before Layers, collapsed default, nine position buttons, bottom safe margin, preserved dimensions, undo/redo, rotation, lock and transparent PNG export.
+- app.js and image assets unchanged from V2.1.15. Updated panel order, version and service worker cache.
+- Physical iPhone/Safari and live deployment not tested.

@@ -1,3 +1,15 @@
+# V2.1.16 — Transform before Layout
+
+Transform is now immediately after Create, before Layout and Layers. All other functions and assets remain unchanged from V2.1.15.
+
+# V2.1.15 — Transform before Layers
+
+Transform is now directly after Layout, before Layers, on all device sizes. All controls and rendering logic are unchanged.
+
+# V2.1.14 — Transform panel order
+
+Transform is now directly after Layers in the left/tools panel on desktop, tablet and mobile. It remains collapsed by default and appears for a selected object. All placement logic and other settings are unchanged.
+
 # V2.1.13 — Bottom Safe Position
 
 Bottom-left, bottom-center and bottom-right now reserve 18% of canvas height (previously 5%), matching the existing bottom Safe Zone guide. For 1080 × 1920, a fitting object moves up 249.6 px. Large objects use the available-space cap. All other anchors and horizontal placement remain unchanged. No existing saved positions are migrated.
