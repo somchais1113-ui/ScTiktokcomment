@@ -1,2 +1,2 @@
-// Replace with the file exported via Template > Export factory JS to deploy your own default.
-window.SC_COMMENT_FACTORY = null;
+// Website default for SCWork Q&A. Replace this file with an exported factory template if desired.
+window.SC_COMMENT_FACTORY = {schema:'SCCommentTemplate',version:1,id:'factory',name:'SCWork Q&A',w:1080,h:1920,bg:{type:'transparent',color:'#26364b',src:'',fit:'cover',opacity:100,blur:0},objects:[{id:'standard-qa-logo',kind:'logo',x:329.4,y:82.08,w:421.2,h:238.95775366943204,rotation:0,opacity:100,locked:false,visible:true,src:window.SC_STANDARD_LOGO.src,ratio:window.SC_STANDARD_LOGO.ratio,fit:'contain',scope:'canvas',target:'',size:39,anchor:1,margin:7.6,anchored:true}],spacing:30,layout:'stack',cardDefaults:{type:'reply',theme:'light',avatarStyle:'auto',fontSize:43,fontWeight:700},exportDefaults:{type:'png',scale:1},lockBrand:false};

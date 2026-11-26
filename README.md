@@ -1,5 +1,17 @@
-# SC Comment Studio V2.1.1 — Mobile Workspace Optimization
-**by SCWork · Dark Theme · Static web application**
+# SC Comment Studio V2.1.2 — Light & Mobile Export Edition
+**by SCWork · Light / Dark Theme · Static web application**
+
+
+## V2.1.2 — Light & Mobile Export Edition
+- Light Mode เป็นค่าเริ่มต้นสำหรับการเปิดครั้งแรก; ปุ่มรูปพระจันทร์/พระอาทิตย์ขวาบนสลับ Light/Dark และจดจำค่าล่าสุดผ่าน localStorage. ธีมหน้าเว็บไม่เปลี่ยนสีการ์ดหรือภาพที่ Export.
+- ใช้ไฟล์ SCWORK Q&A Printing Solutions Sticker.png ที่ผู้ใช้แนบมาโดยตรง ตัดเฉพาะขอบโปร่งใสภายนอก (1567×889 px) ไม่มีการเปลี่ยนสีหรือองค์ประกอบ. ฝังเป็น Standard Logo ในไฟล์ `standard-logo.js` เพื่อให้เว็บและ standalone ใช้งานได้โดยไม่ต้อง upload ใหม่; `standard-logo.png` เป็น asset ต้นทางที่ตัดขอบแล้ว.
+- Factory Default SCWork Q&A: 1080×1920, พื้นหลังโปร่งใสตามไฟล์ตัวอย่าง, โลโก้ Top Center กว้าง 39% ของ Canvas และ margin 7.6% ของความกว้าง, opacity 100%; ไม่ล็อกโลโก้เพื่อให้เลือกตำแหน่ง 9 จุดได้ทันที. PNG 1× เป็นค่า export เริ่มต้นและรักษาพื้นหลังตามการตั้งค่า; เลือก PNG Transparent เมื่อต้องการตัดพื้นหลังออกทั้งหมด.
+- ปุ่ม Standard logo เลือกโลโก้เดิมในโปรเจกต์ หรือเพิ่มโลโก้หากถูกลบออก. + Logo ยังคงใช้สำหรับอัปโหลดโลโก้อื่น. Personal Default เดิมไม่ถูกลบ; หากมี Default เดิมให้ใช้ Template > Reset factory เพื่อเรียกชุดมาตรฐานใหม่ (เก็บ library แต่แทนที่องค์ประกอบแบรนด์ใน Canvas; Undo ได้).
+- Layout 6 แบบแสดงเป็นไอคอนพร้อมชื่อสำหรับ tooltip/การเข้าถึง; มือถือ/แท็บเล็ตเรียง 6 ปุ่มใน 1 แถว, Desktop 3 ปุ่มต่อแถว. Spacing และการจัดวางเดิมยังอยู่.
+- Background อยู่ซ้ายบนของ Canvas Toolbar. กดเปิด Popup ที่ปรับค่า type, color, upload/remove image, fit, opacity, blur; กด Done เพื่อปิด. ไม่ต้องเลื่อนแผง Properties ลงไปหา. Canvas ยังคงล็อกตำแหน่งตาม V2.1.1.
+- Export → เลือก Format/Resolution → ระบบเตรียมภาพ → Save to Photos / Share (เมื่อ navigator.canShare รองรับไฟล์) → เลือก Save Image/บันทึกภาพในเมนูของ iOS หากปรากฏ. ใช้ Web Share API จากการแตะของผู้ใช้และส่งไฟล์ PNG/JPG โดยตรง ไม่ใช่แชร์ URL. เว็บไม่สามารถบันทึกเข้า Photos แบบเงียบ ๆ หรือยืนยันว่า iOS บันทึกสำเร็จได้. หาก Share ไม่รองรับ ให้ใช้ Download หรือกดค้างบน Preview แล้วเลือกบันทึกภาพถ้ามี. ZIP ยังคงใช้ Download. ทดสอบบน Vercel HTTPS จริงเพื่อยืนยันความเข้ากันได้.
+- Deploy: ใช้ไฟล์ใน Fully Package ทั้งชุด โดยเฉพาะ index.html, app.js, standard-logo.js และ factory-template.js ใหม่; Framework Preset Other/Static, ไม่ต้อง Build. หากเคยปรับ Factory เดิมให้สำรองก่อนแทนที่. Standalone HTML รวม JavaScript และ Standard Logo ในไฟล์เดียว. ไม่ต้องใช้ API หรือฐานข้อมูลภายนอก.
+- ข้อจำกัด: ทดสอบ Chromium โดยจำลอง viewport, storage และ Share API เท่านั้น ไม่ได้ทดสอบกับ iPhone/iPad จริง และยังไม่ได้ Deploy.
 
 ## V2.1.1 — Mobile / Tablet Fixed Workspace
 - Main Menu, Canvas Toolbar, Canvas และ Status Bar คงอยู่ด้านบนของพื้นที่ทำงาน; เลื่อนเฉพาะแผง Create / Layout / Layers / Properties ด้านล่าง
@@ -28,7 +40,7 @@
 
 ### ฝังค่าเริ่มต้นประจำเว็บไซต์จริง (Factory Default)
 สำหรับให้ทุกเครื่องเปิดเว็บแล้วเจอโลโก้และ Layout เดียวกันโดยไม่ต้องตั้งค่าใหม่: ตั้ง Canvas และ Template ให้ครบ จากนั้นกด **Export factory JS** ในหน้าต่าง Template แล้วนำ `factory-template.js` ที่ดาวน์โหลดไปแทนไฟล์ชื่อเดียวกันใน Fully Package จากนั้น Deploy ใหม่บน Vercel หรือ static hosting อื่น หากต้องการให้เครื่องเดิมเห็น Factory Default ใหม่ให้กด Reset factory (Personal Default ที่บันทึกไว้จะมีลำดับเหนือ Factory)
-- Source package มีไฟล์ `factory-template.js` แยกต่างหาก ค่าเริ่มต้นยังไม่มีโลโก้จริงเพราะยังไม่มีไฟล์โลโก้ที่ผู้ใช้อนุมัติสำหรับเวอร์ชันนี้
+- V2.1.2 มี Factory Default พร้อมโลโก้ SCWork Q&A จริงแล้ว (`standard-logo.js` และ `standard-logo.png`) หากต้องการเปลี่ยน Factory ให้ Export factory JS ตามขั้นตอนด้านบน
 - Standalone HTML ฝัง factory เริ่มต้นไว้แล้ว; การเปลี่ยน Factory สำหรับเว็บไซต์ให้ใช้ Fully Package
 - ข้อมูล Project ใช้ schema version 2 เดิมเพื่อรองรับการเปิดงาน V2.0; มี field เพิ่มใน V2.1. Save project ยังเป็นการเก็บ artwork ทั้งหมดแยกจาก Template
 

@@ -1,0 +1,1 @@
+Optional developer tests: Python + playwright + Pillow + Chromium at /usr/bin/chromium. Run python tests/test_workspace.py and python tests/test_batch_export.py. Tests use simulated localStorage and Share API; native iOS not tested. Browser snapshots and exports saved in /tmp.
