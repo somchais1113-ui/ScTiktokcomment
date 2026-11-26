@@ -1,15 +1,13 @@
-# V2.1.22 — Group Shuffle & Collapsible Layers
-Base: V2.1.21. Changes limited to Layers disclosure control and group identity shuffle, including identification of group-shuffled illustrative/anonymized questions in the renderer. Existing single Shuffle, assets, logo, layout and position logic retained.
+# V2.1.23 — Below Logo Touch Fix
 
-## Actual checks
-- Node JavaScript syntax check passed.
-- Chromium test_group_shuffle.py passed at 390×844, 768×1024, 1440×900.
-- Layers defaults closed; open/close, layer count and list tested.
-- Group shuffle disabled for single question; four-card case tested, including real-comment source, name lock, avatar lock, object lock, unique names/photos, and unchanged text/position/width/rotation/source/brand assets.
-- Undo and redo restore the entire group in one operation.
-- Group-shuffled header labels verified in rendering data; transparent PNG 1080×1920 exported at all three sizes; ZIP containing four PNGs exported on mobile viewport.
-- No JavaScript page errors in test suites.
-- Existing Layout collapse and Transform controls tested via test_panel_visibility.py at all three sizes.
+Baseline V2.1.22: the orange button worked under Chromium touch emulation (390 × 844); the reported Safari failure was not reproduced. The exact Safari cause remains unverified.
 
-## Limits
-Tests load scripts inline in Chromium with simulated browser storage. Not tested on physical iPhone/Safari or deployed Vercel. Height can change with username length; group shuffle does not reflow the layout. Name/avatar uniqueness is best effort after library exhaustion or if preexisting locked entries repeat. Group-shuffled cards show an illustrative/anonymized header, including export. Standalone HTML is for local use; use full package for PWA.
+Changes: native per-button click listener instead of SVG event delegation; non-interactive SVG children and touch-action manipulation; comment-only below-logo action, visible canvas-logo requirement and clear status feedback when placement cannot fit. Existing other presets unchanged. Service worker cache version v2123.
+
+Verified with Chromium via Playwright set_content (inline scripts, simulated storage):
+- 390 × 844 touch and 768 × 1024 touch: actual tap events; 1440 × 900 mouse: click events.
+- Below Logo aligns to logo center and gap; preserves text, width, height and rotation.
+- Undo/Redo, hidden logo, locked comment, selected logo, insufficient space, all three standard anchors, transparent PNG export 1080 × 1920: PASS at all three sizes.
+- No page JavaScript errors in the above runs; node --check app.js PASS.
+
+Limitations: local HTTP navigation was blocked by the environment; hosted service worker lifecycle, persistent browser storage, real iOS Safari and Vercel deployment have not been verified. No live deployment performed.

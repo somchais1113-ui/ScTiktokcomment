@@ -1,3 +1,9 @@
+# V2.1.23 — Below Logo Touch Fix
+
+- Native button click and non-interactive SVG for Position buttons.
+- Below Logo requires an unlocked comment in Compose and a visible canvas logo; maintains scale, rotation and gap. If there is insufficient room, it reports the issue instead of overlapping.
+- Service worker cache updated to v2123.
+
 # V2.1.21 — Transform / Layout controls
 
 - Transform is always expanded when an object is selected. Layout is a collapsible section, closed by default. All four position buttons and existing rendering logic are unchanged.
