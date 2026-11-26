@@ -1,3 +1,34 @@
+# V2.1.13 — Bottom Safe Position
+
+Bottom-left, bottom-center and bottom-right now reserve 18% of canvas height (previously 5%), matching the existing bottom Safe Zone guide. For 1080 × 1920, a fitting object moves up 249.6 px. Large objects use the available-space cap. All other anchors and horizontal placement remain unchanged. No existing saved positions are migrated.
+
+# V2.1.12 — Position Presets
+
+- Transform: replace X/Y/Width/Height fields with nine one-tap position icons in Compose. Outer positions use a 5% inset (or less for large objects). Moves only the selected unlocked object, preserving its size and angle. Resize and free movement remain available via the bounding box. Attached logos continue to use their own placement controls. In Single mode, the card-only export has no composition position.
+- PWA cache version updated.
+
+# V2.1.11 — Thai Reply Heading
+
+Reply comments use ตอบกลับความคิดเห็นของ followed by the username on a separate bold line. Simulated questions retain ตอบกลับความเห็นของ; replacement names/images retain a visible disclosure. Shared canvas rendering applies to composition and individual exports. All other settings and assets are inherited from V2.1.8.
+
+# V2.1.8 — Unified Source Shuffle
+
+- Shuffle is enabled for both mock questions and authorized real comments.
+- For real comments, Shuffle replaces the display name and/or avatar with fictional library assets, without changing the source or comment text. The rendered heading explicitly states ชื่อแทน, ภาพแทน, or , including exported images. Do not use substitute identities as authentic attribution.
+- Lock name and Lock avatar work independently for both sources. Both locks disable Shuffle. Card height is calculated from the heading and text; position and width remain unchanged.
+- Source switching still clears the prior identity. Enter authorized attribution or leave the name blank for anonymity; use Shuffle for illustrative replacements. Undo can restore the previous identity.
+- Deploy the full package. The service worker cache is v218. Standalone HTML is for local use; hosted ZIP is for PWA.
+
+The notes below describe older versions; current behaviour above supersedes their identity restrictions.
+
+# V2.1.7 — Source Switch Fix
+
+- เลือก Source ได้ทั้งสองแบบโดยไม่ต้องล้างชื่อ/รูปด้วยตนเองก่อน
+- เปลี่ยนเป็นคอมเมนต์จริง: ล้างชื่อและรูปจำลอง, ใช้ภาพแทนตัวแบบกลาง, กรอกชื่อจริงหรือเว้นว่างเพื่อไม่ระบุชื่อ
+- เปลี่ยนเป็นตอบกลับความเห็นของ: เลือกชื่อและรูปจากคลังใหม่ พร้อมป้ายตอบกลับความเห็นของ
+- รักษาข้อความ ตำแหน่ง ความกว้าง และสไตล์การ์ด (ความสูงอาจเปลี่ยนตามข้อความหัวการ์ด) และ Undo ได้
+- อัปเดต Service Worker เป็น v217
+
 # SC Comment Studio V2.1.6 — Smart Workflow Edition
 
 All favicon, header and PWA icon artwork is rendered from the exact supplied `icon-source.svg`. The iOS and maskable PWA PNGs use an opaque dark background for platform cropping; the ordinary favicon and PWA icon variants preserve the master artwork's transparent corners. The editor and content logo are unchanged. Deploy the entire folder; existing Home Screen shortcuts may need to be removed and added again. Cache version: v215. The separate standalone HTML is for local preview.
@@ -69,3 +100,6 @@ The new icon is an original **SC** mark inspired by the energetic dual-color lay
 - Existing upload/remove avatar, procedural styles and font controls are under Appearance & avatar. Source remains selectable for authorized real comments. To change a mock card to real, first enter the real username and remove the built-in avatar or replace with an authorized image.
 - Deploy the entire extracted folder, including identity-library.js, index.html, app.js and sw.js. Service-worker cache namespace is updated to v216; network-first loading with offline fallback. If old PWA persists, reopen online or refresh; existing Home Screen icon does not need changing.
 - Standalone HTML embeds code, standard logo, identity library and icon; use the ZIP for hosted PWA functionality. Existing personal template settings are not reset.
+
+
+- ปรับตำแหน่งเริ่มต้นของคอมเมนต์ให้เยื้องซ้ายเล็กน้อย เพื่อลดการบังพื้นที่ด้านขวา
