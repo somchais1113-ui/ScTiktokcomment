@@ -1,4 +1,4 @@
-# SC Comment Studio V2.1.5 — Unified Master Icon
+# SC Comment Studio V2.1.6 — Smart Workflow Edition
 
 All favicon, header and PWA icon artwork is rendered from the exact supplied `icon-source.svg`. The iOS and maskable PWA PNGs use an opaque dark background for platform cropping; the ordinary favicon and PWA icon variants preserve the master artwork's transparent corners. The editor and content logo are unchanged. Deploy the entire folder; existing Home Screen shortcuts may need to be removed and added again. Cache version: v215. The separate standalone HTML is for local preview.
 
@@ -61,3 +61,11 @@ Safari on iOS does **not** allow a website to automatically pin itself to the Ho
 
 ## Visual design note
 The new icon is an original **SC** mark inspired by the energetic dual-color layering often seen in short-video apps. It is **not** an exact TikTok logo copy.
+
+## V2.1.6 — Smart Workflow Edition
+- On mobile/tablet, selected Comment Editor is placed at the top of the lower scrollable pane; desktop keeps it first in the inspector. Blue border highlights the editor. Transform and Appearance & avatar are collapsed by default.
+- `identity-library.js` embeds all 50 supplied fictional labels and 50 cropped avatar images. `avatars/` contains individual JPEG files (192×192); artwork is taken from the two supplied grids, normalized to square and clipped to a circle by the renderer. No AI API or network request is required to generate identities.
+- Shuffle is a single button for mock questions: changes name and avatar, with independent Lock name / Lock avatar options. Explicit names in batch input are retained; names/avatars are selected without reuse where available, but repeats are possible once the pool is exhausted or identities are explicitly repeated. Changing label length can change automatic card height. Actual comment identities are not randomized. Mock questions remain marked as such on the exported artwork.
+- Existing upload/remove avatar, procedural styles and font controls are under Appearance & avatar. Source remains selectable for authorized real comments. To change a mock card to real, first enter the real username and remove the built-in avatar or replace with an authorized image.
+- Deploy the entire extracted folder, including identity-library.js, index.html, app.js and sw.js. Service-worker cache namespace is updated to v216; network-first loading with offline fallback. If old PWA persists, reopen online or refresh; existing Home Screen icon does not need changing.
+- Standalone HTML embeds code, standard logo, identity library and icon; use the ZIP for hosted PWA functionality. Existing personal template settings are not reset.

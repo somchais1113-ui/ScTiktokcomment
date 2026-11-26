@@ -3,7 +3,7 @@ from PIL import Image
 from pathlib import Path
 import zipfile
 html=(Path(__file__).resolve().parents[1] / 'index.html').read_text()
-for filename in ['standard-logo.js','factory-template.js','app.js']:
+for filename in ['standard-logo.js','factory-template.js','identity-library.js','app.js']:
  html=html.replace(f'<script src="{filename}"></script>', '<script>'+ (Path(__file__).resolve().parents[1]/filename).read_text()+'</script>')
 shim='''<script>window.testStorage={};Object.defineProperty(window,'localStorage',{value:{getItem:k=>window.testStorage[k]??null,setItem:(k,v)=>window.testStorage[k]=String(v)}});Object.defineProperty(window,'indexedDB',{value:null});Object.defineProperty(navigator,'share',{value:undefined});Object.defineProperty(navigator,'canShare',{value:undefined});</script>'''
 with sync_playwright() as p:
