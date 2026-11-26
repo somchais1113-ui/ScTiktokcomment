@@ -1,4 +1,4 @@
-const CACHE_NAME='sc-comment-v213';
+const CACHE_NAME='sc-comment-v214';
 const CORE_ASSETS=['./', './index.html', './app.js', './factory-template.js', './standard-logo.js', './standard-logo.png', './favicon.ico', './favicon-16x16.png', './favicon-32x32.png', './favicon-48x48.png', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './icon-maskable-192.png', './icon-maskable-512.png', './manifest.webmanifest'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(CORE_ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE_NAME).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});

@@ -1,3 +1,11 @@
+# SC Comment Studio V2.1.4 — Header Icon Update
+
+- Header now uses the existing SC app icon (`icon-192.png`), in both themes and all screen sizes.
+- Header spacing, editor functionality and standard content logo remain unchanged.
+- Service-worker cache bumped to v214 to refresh the deployed UI.
+- Fully Package: deploy the folder contents to Vercel. Standalone HTML: local preview only; installable PWA requires the hosted package.
+
+## Previous release notes
 # SC Comment Studio V2.1.3 — App Icon & PWA Edition
 
 ## What's new

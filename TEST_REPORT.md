@@ -1,30 +1,7 @@
-# SC Comment Studio V2.1.3 — Test Report
-
-## Scope tested
-- Favicon links in `index.html`
-- Apple touch icon link
-- Web app manifest generation and file paths
-- Service worker registration script presence
-- Asset packaging completeness
-- Basic icon rendering output files
-
-## Verified
-- `favicon.ico` present
-- PNG favicon variants present
-- `apple-touch-icon.png` present
-- `manifest.webmanifest` present and valid JSON
-- `sw.js` present
-- `index.html` includes PWA and iOS meta tags
-- standalone HTML copy exported
-- ZIP package created
-
-## Manual verification still recommended
-- iPhone Safari: Share → Add to Home Screen
-- iPhone standalone launch behavior
-- Chrome install prompt behavior after deploy
-- icon appearance on the real iOS Home Screen
-
-## Known limitations
-- iOS Safari cannot be forced to auto-add the site to Photos or Home Screen; user action is still required.
-- The install prompt on desktop/mobile Chrome can vary by browser heuristics.
-- Service worker is intentionally lightweight and caches core files only.
+# V2.1.4 — Header icon test
+- Chromium, inline standalone document via set_content (direct local HTTP/file navigation blocked by environment).
+- Header icon loaded (192 px source), visible in light and dark themes at 1440×900, 390×844 and 768×1024. Rendered size unchanged (34 px desktop, 27 px mobile/tablet).
+- No page errors during the header/theme smoke test.
+- app.js unchanged byte-for-byte from V2.1.3; node syntax check passed for app.js and sw.js.
+- Service worker cache name incremented; deployment and real iOS Home Screen update not tested.
+- Full functionality regression not repeated for this header-only change.
