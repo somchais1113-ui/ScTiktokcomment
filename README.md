@@ -1,3 +1,15 @@
+# V2.1.19 — Three Position Controls
+
+Transform now displays only Top Center, Center, Bottom Center in one row. Existing position logic (top 2%, bottom 18%, subject to object size), logo placement, and all other functionality are unchanged.
+
+# V2.1.18 — Distinct Position Presets
+
+Horizontal inset 1%, top inset 2%, bottom inset 18% of canvas height when space permits. Adaptive caps preserve separation for large fitting objects; oversized objects are centered on that axis. Object dimensions and rotation are preserved. Existing saved projects are not repositioned automatically. All other features inherited.
+
+# V2.1.17 — Compact position controls
+
+Transform Position: nine original anchors in two rows (5 + 4), same order and position logic. All other features inherited from V2.1.16.
+
 # V2.1.16 — Transform before Layout
 
 Transform is now immediately after Create, before Layout and Layers. All other functions and assets remain unchanged from V2.1.15.
