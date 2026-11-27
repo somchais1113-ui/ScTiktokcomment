@@ -1,13 +1,10 @@
-# V2.1.23 — Below Logo Touch Fix
+# SC Comment Studio V2.1.24 — Library Update
+Base: V2.1.23 full package. Added 100 labels and 50 cropped photo illustration assets; retained 50 original labels and 50 original avatars. Names stored in four groups (50/35/35/30); no demographic matching. Photo pool used only for visibly labeled sample questions. Real-source Shuffle uses illustrated replacement avatars and visible disclosure.
 
-Baseline V2.1.22: the orange button worked under Chromium touch emulation (390 × 844); the reported Safari failure was not reproduced. The exact Safari cause remains unverified.
+## Tests executed
+- Node syntax check: app.js and identity-library.js — PASS.
+- test_library_update.py — PASS: 150 unique names, 100 avatar entries, source-specific pools, visible disclosures, no page errors.
+- test_group_shuffle.py — PASS on Chromium 390×844, 768×1024 and 1440×900: group shuffle, lock, undo/redo, layer collapse, PNG and ZIP export.
 
-Changes: native per-button click listener instead of SVG event delegation; non-interactive SVG children and touch-action manipulation; comment-only below-logo action, visible canvas-logo requirement and clear status feedback when placement cannot fit. Existing other presets unchanged. Service worker cache version v2123.
-
-Verified with Chromium via Playwright set_content (inline scripts, simulated storage):
-- 390 × 844 touch and 768 × 1024 touch: actual tap events; 1440 × 900 mouse: click events.
-- Below Logo aligns to logo center and gap; preserves text, width, height and rotation.
-- Undo/Redo, hidden logo, locked comment, selected logo, insufficient space, all three standard anchors, transparent PNG export 1080 × 1920: PASS at all three sizes.
-- No page JavaScript errors in the above runs; node --check app.js PASS.
-
-Limitations: local HTTP navigation was blocked by the environment; hosted service worker lifecycle, persistent browser storage, real iOS Safari and Vercel deployment have not been verified. No live deployment performed.
+## Not tested
+Physical iPhone/Safari, live Vercel deployment, and offline PWA update after deployment. Existing workspace/position controls were not changed or independently re-tested in this update.

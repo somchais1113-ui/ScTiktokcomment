@@ -1,8 +1,8 @@
-# V2.1.23 — Below Logo Touch Fix
+# V2.1.24 — Below Logo Touch Fix
 
 - Native button click and non-interactive SVG for Position buttons.
 - Below Logo requires an unlocked comment in Compose and a visible canvas logo; maintains scale, rotation and gap. If there is insufficient room, it reports the issue instead of overlapping.
-- Service worker cache updated to v2123.
+- Service worker cache updated to v2124.
 
 # V2.1.21 — Transform / Layout controls
 
@@ -149,3 +149,9 @@ The new icon is an original **SC** mark inspired by the energetic dual-color lay
 - Lock name / Lock avatar / Lock object มีผลต่อการสุ่ม; Undo ย้อนทั้งกลุ่มในครั้งเดียว
 - คำถามที่สุ่มเป็นกลุ่มแสดงหัวคำถามตัวอย่าง หรือปกปิดตัวตนสำหรับความคิดเห็นจริง เพื่อให้แยกแหล่งที่มาได้ในภาพส่งออก
 - ปุ่ม Shuffle เดิมยังอยู่; Layout และ Transform ไม่เปลี่ยน
+
+## V2.1.24 — Library update
+- 150 labels (50 existing + 100 new; groups 35/35/30).
+- 100 avatars (50 existing illustrations + 50 supplied photo illustrations). Photo pool is available for disclosed sample questions only; real-source Shuffle uses original illustrated avatars.
+- Sample questions and substituted identities are visibly identified in the rendered card and exports. No age-based matching is used.
+- Other editor controls unchanged.
