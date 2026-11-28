@@ -1,3 +1,9 @@
+# V2.2.4 — TikTok Hashtag Guard & iPhone Stability
+
+- All publish-ready caption output is limited to five unique hashtags, always beginning with #scwork #กราฟฟิค. Topic-specific tags retain priority; existing presets and manual edits are normalized at preview/copy. Inline tags are consolidated in the publish preview. Copy caption and Copy all include mandatory tags.
+- Mobile preview uses at most 1600 px on the longest edge (export resolution unchanged), avoids unnecessary canvas reallocation, bounds inactive decoded image cache, and releases temporary export canvases. Image loading and encoding have timeout errors rather than indefinite waits. Mobile viewport updates are coalesced and no longer force scroll resets; iPhone caption controls fit narrow safe-area layouts.
+- PWA cache v2240. Physical iPhone/Safari regression testing remains required before release.
+
 # V2.1.24 — Below Logo Touch Fix
 
 - Native button click and non-interactive SVG for Position buttons.
