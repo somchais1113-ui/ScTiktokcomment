@@ -1,0 +1,252 @@
+{
+  "version": "2.3.0",
+  "tiktok_baselines": 15,
+  "social_cases": 45,
+  "additional_cases": 14,
+  "results": [
+    {
+      "q": "ทำไมต้องเผื่อตัดตก?",
+      "tiktok": 1097,
+      "facebook": {
+        "length": 1158,
+        "tags": "#scwork #กราฟฟิค #Bleed #Prepress #เตรียมไฟล์งานพิมพ์"
+      },
+      "instagram": {
+        "length": 525,
+        "tags": "#scwork #กราฟฟิค #Bleed #Prepress #เตรียมไฟล์งานพิมพ์"
+      },
+      "x": {
+        "length": 163,
+        "tags": "#scwork #กราฟฟิค #Bleed"
+      }
+    },
+    {
+      "q": "RGB CMYK ต่างกันยังไง",
+      "tiktok": 765,
+      "facebook": {
+        "length": 817,
+        "tags": "#scwork #กราฟฟิค #RGB #CMYK #ColorManagement"
+      },
+      "instagram": {
+        "length": 380,
+        "tags": "#scwork #กราฟฟิค #RGB #CMYK #ColorManagement"
+      },
+      "x": {
+        "length": 142,
+        "tags": "#scwork #กราฟฟิค #RGB"
+      }
+    },
+    {
+      "q": "Rich Black คืออะไร",
+      "tiktok": 779,
+      "facebook": {
+        "length": 837,
+        "tags": "#scwork #กราฟฟิค #RichBlack #CMYK #ColorManagement"
+      },
+      "instagram": {
+        "length": 410,
+        "tags": "#scwork #กราฟฟิค #RichBlack #CMYK #ColorManagement"
+      },
+      "x": {
+        "length": 178,
+        "tags": "#scwork #กราฟฟิค #RichBlack"
+      }
+    },
+    {
+      "q": "Pantone C กับ U ต่างกันยังไง",
+      "tiktok": 712,
+      "facebook": {
+        "length": 773,
+        "tags": "#scwork #กราฟฟิค #Pantone #SpotColor #ColorManagement"
+      },
+      "instagram": {
+        "length": 405,
+        "tags": "#scwork #กราฟฟิค #Pantone #SpotColor #ColorManagement"
+      },
+      "x": {
+        "length": 184,
+        "tags": "#scwork #กราฟฟิค #Pantone"
+      }
+    },
+    {
+      "q": "Overprint กับ Knockout ต่างกันยังไง",
+      "tiktok": 820,
+      "facebook": {
+        "length": 885,
+        "tags": "#scwork #กราฟฟิค #Overprint #Prepress #เตรียมไฟล์งานพิมพ์"
+      },
+      "instagram": {
+        "length": 382,
+        "tags": "#scwork #กราฟฟิค #Overprint #Prepress #เตรียมไฟล์งานพิมพ์"
+      },
+      "x": {
+        "length": 183,
+        "tags": "#scwork #กราฟฟิค #Overprint"
+      }
+    },
+    {
+      "q": "DPI กับ Effective PPI ต่างกันยังไง",
+      "tiktok": 847,
+      "facebook": {
+        "length": 891,
+        "tags": "#scwork #กราฟฟิค #DPI #PPI #Prepress"
+      },
+      "instagram": {
+        "length": 446,
+        "tags": "#scwork #กราฟฟิค #DPI #PPI #Prepress"
+      },
+      "x": {
+        "length": 173,
+        "tags": "#scwork #กราฟฟิค #DPI"
+      }
+    },
+    {
+      "q": "Kerning กับ Tracking ต่างกันยังไง",
+      "tiktok": 770,
+      "facebook": {
+        "length": 825,
+        "tags": "#scwork #กราฟฟิค #Typography #Kerning #Tracking"
+      },
+      "instagram": {
+        "length": 386,
+        "tags": "#scwork #กราฟฟิค #Typography #Kerning #Tracking"
+      },
+      "x": {
+        "length": 206,
+        "tags": "#scwork #กราฟฟิค #Typography"
+      }
+    },
+    {
+      "q": "ICC Profile กับ Proofing คืออะไร",
+      "tiktok": 826,
+      "facebook": {
+        "length": 887,
+        "tags": "#scwork #กราฟฟิค #ICCProfile #ColorManagement #ระบบสี"
+      },
+      "instagram": {
+        "length": 446,
+        "tags": "#scwork #กราฟฟิค #ICCProfile #ColorManagement #ระบบสี"
+      },
+      "x": {
+        "length": 201,
+        "tags": "#scwork #กราฟฟิค #ICCProfile"
+      }
+    },
+    {
+      "q": "Metamerism คืออะไร",
+      "tiktok": 895,
+      "facebook": {
+        "length": 956,
+        "tags": "#scwork #กราฟฟิค #Metamerism #ColorManagement #ระบบสี"
+      },
+      "instagram": {
+        "length": 425,
+        "tags": "#scwork #กราฟฟิค #Metamerism #ColorManagement #ระบบสี"
+      },
+      "x": {
+        "length": 152,
+        "tags": "#scwork #กราฟฟิค #Metamerism"
+      }
+    },
+    {
+      "q": "Offset กับ Digital เลือกแบบไหนดี?",
+      "tiktok": 904,
+      "facebook": {
+        "length": 981,
+        "tags": "#scwork #กราฟฟิค #OffsetPrinting #DigitalPrinting #PrintingTechnology"
+      },
+      "instagram": {
+        "length": 450,
+        "tags": "#scwork #กราฟฟิค #OffsetPrinting #DigitalPrinting #PrintingTechnology"
+      },
+      "x": {
+        "length": 235,
+        "tags": "#scwork #กราฟฟิค #OffsetPrinting"
+      }
+    },
+    {
+      "q": "GSM กับความหนากระดาษต่างกันยังไง",
+      "tiktok": 726,
+      "facebook": {
+        "length": 780,
+        "tags": "#scwork #กราฟฟิค #GSM #กระดาษ #MaterialScience"
+      },
+      "instagram": {
+        "length": 360,
+        "tags": "#scwork #กราฟฟิค #GSM #กระดาษ #MaterialScience"
+      },
+      "x": {
+        "length": 158,
+        "tags": "#scwork #กราฟฟิค #GSM"
+      }
+    },
+    {
+      "q": "Trapping กับ Registration คืออะไร",
+      "tiktok": 838,
+      "facebook": {
+        "length": 896,
+        "tags": "#scwork #กราฟฟิค #Trapping #Registration #Prepress"
+      },
+      "instagram": {
+        "length": 438,
+        "tags": "#scwork #กราฟฟิค #Trapping #Registration #Prepress"
+      },
+      "x": {
+        "length": 190,
+        "tags": "#scwork #กราฟฟิค #Trapping"
+      }
+    },
+    {
+      "q": "PDF/X-1a กับ PDF/X-4 ต่างกันยังไง",
+      "tiktok": 896,
+      "facebook": {
+        "length": 956,
+        "tags": "#scwork #กราฟฟิค #PDFX #Prepress #เตรียมไฟล์งานพิมพ์"
+      },
+      "instagram": {
+        "length": 452,
+        "tags": "#scwork #กราฟฟิค #PDFX #Prepress #เตรียมไฟล์งานพิมพ์"
+      },
+      "x": {
+        "length": 212,
+        "tags": "#scwork #กราฟฟิค #PDFX"
+      }
+    },
+    {
+      "q": "Auto Trace กับ Vector คืออะไร",
+      "tiktok": 831,
+      "facebook": {
+        "length": 893,
+        "tags": "#scwork #กราฟฟิค #Vector #DesignTechnology #Automation"
+      },
+      "instagram": {
+        "length": 454,
+        "tags": "#scwork #กราฟฟิค #Vector #DesignTechnology #Automation"
+      },
+      "x": {
+        "length": 187,
+        "tags": "#scwork #กราฟฟิค #Vector"
+      }
+    },
+    {
+      "q": "Data Merge กับ Multi-SKU ทำยังไง",
+      "tiktok": 853,
+      "facebook": {
+        "length": 918,
+        "tags": "#scwork #กราฟฟิค #DataMerge #DesignTechnology #Automation"
+      },
+      "instagram": {
+        "length": 442,
+        "tags": "#scwork #กราฟฟิค #DataMerge #DesignTechnology #Automation"
+      },
+      "x": {
+        "length": 196,
+        "tags": "#scwork #กราฟฟิค #DataMerge"
+      }
+    }
+  ],
+  "browser_tested": false,
+  "x_counter": "conservative estimate, not official twitter-text",
+  "mock_dom_controller_checks": 12,
+  "mock_dom_controller_status": "passed (not real browser)"
+}

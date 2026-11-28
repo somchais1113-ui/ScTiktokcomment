@@ -1,3 +1,11 @@
+# V2.3.0 — Multi-Platform Content Studio
+
+- TikTok controller and Narrative runtime remain byte-for-byte unchanged. New isolated Facebook, Instagram and X panels share reviewed Knowledge Library, not TikTok presets or feedback.
+- Brand-colored selector and social action buttons; default TikTok on open. Separate in-session drafts, local presets and local feedback per platform. Exact-question approved style may affect tone/length only, not facts.
+- Facebook educational narrative; Instagram visual-first; X one topic with complete passages that fit conservative weighted 280-character estimate. Copy blocked for over-limit X. All posts carry #scwork #กราฟฟิค; FB/IG cap 5, X cap 3 as studio policy.
+- 15 TikTok baseline lengths, 45 social engine tests and 14 additional checks passed. Physical Safari/browser integration remains pending; X count is deliberately conservative, not official twitter-text.
+- PWA cache v2300.
+
 # V2.2.6 — Phone Default Workspace
 
 - Phone workspace defaults to a 30% preview / approximately 70% tools split (excluding splitter thickness), matching the supplied iPhone reference. The existing draggable separator and Fit behaviour remain intact.
