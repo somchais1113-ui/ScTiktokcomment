@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "storage_key": "scwork.caption.feedback.v1",
+  "statuses": [
+    "approved",
+    "corrected",
+    "rejected",
+    "pending"
+  ],
+  "required_fields": [
+    "id",
+    "question",
+    "body",
+    "tags",
+    "status",
+    "settings",
+    "note",
+    "original_body",
+    "original_tags",
+    "created_at",
+    "updated_at"
+  ],
+  "settings": {
+    "tone": [
+      "friendly",
+      "professional",
+      "hook"
+    ],
+    "length": [
+      "short",
+      "medium",
+      "long"
+    ],
+    "variant": [
+      0,
+      1,
+      2
+    ]
+  },
+  "limits": {
+    "records": 1000,
+    "serialized_code_units": 2000000
+  },
+  "policy": "User-approved examples are style references only. Imported approvals require local review. Knowledge approval remains separate."
+}

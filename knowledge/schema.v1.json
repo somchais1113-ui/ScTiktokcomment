@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Curated knowledge seed; source-derived drafts not approved for generation.",
+  "required_fields": [
+    "id",
+    "module",
+    "category",
+    "topic",
+    "aliases",
+    "intents",
+    "knowledge",
+    "constraints",
+    "related_modules",
+    "source",
+    "review_status",
+    "eligible_for_generation"
+  ],
+  "review_statuses": [
+    "draft_source_summarized",
+    "pending_external_validation",
+    "approved",
+    "retired"
+  ],
+  "generation_policy": "Only approved records with eligible_for_generation=true may enter the future runtime. All conditional constraints must accompany claims. Unsupported or uncertain queries should fall back without inventing technical facts."
+}

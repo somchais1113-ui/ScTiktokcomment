@@ -1,0 +1,63 @@
+[
+  {
+    "id": "VAL-01",
+    "modules": [
+      "01",
+      "08"
+    ],
+    "issue": "Typography size and design heuristics",
+    "action": "Validate with actual typeface, media and applicable requirements."
+  },
+  {
+    "id": "VAL-02",
+    "modules": [
+      "02",
+      "05",
+      "09"
+    ],
+    "issue": "ICC, TAC, Delta E, black formula, AQL and Ac/Re",
+    "action": "Check original standards and print conditions before numerical claims."
+  },
+  {
+    "id": "VAL-03",
+    "modules": [
+      "03",
+      "04",
+      "07",
+      "09"
+    ],
+    "issue": "Machine specs, material grades, lead time, cost reduction, MOQ, finishing limits",
+    "action": "Use supplier specifications and measured tests; avoid universal guarantees."
+  },
+  {
+    "id": "VAL-04",
+    "modules": [
+      "04",
+      "06",
+      "10"
+    ],
+    "issue": "Food contact, Thai labeling, IP and license, sustainability claims",
+    "action": "Verify current official requirements and scope before use."
+  },
+  {
+    "id": "VAL-05",
+    "modules": [
+      "05",
+      "06",
+      "07",
+      "10"
+    ],
+    "issue": "PDF/X, masks, dieline overprint and vector path rules",
+    "action": "Resolve workflow-specific contradictions and distinguish print from technical layers."
+  },
+  {
+    "id": "VAL-06",
+    "modules": [
+      "06",
+      "09",
+      "10"
+    ],
+    "issue": "GS1, RFID, PDF/VT, JDF/XJDF and automation ROI",
+    "action": "Verify current specifications, compatibility and measured outcomes."
+  }
+]

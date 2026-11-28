@@ -1,0 +1,191 @@
+{
+  "phase": "03",
+  "version": "0.1.0-experimental",
+  "records": 60,
+  "additional_alias_entries": 211,
+  "fixture_count": 60,
+  "top1": 60,
+  "top3": 60,
+  "intent": 60,
+  "structural_checks": [
+    [
+      "empty",
+      true
+    ],
+    [
+      "unrelated",
+      true
+    ],
+    [
+      "ascii boundary",
+      true
+    ],
+    [
+      "weak ambiguous",
+      true
+    ],
+    [
+      "multi-domain",
+      true
+    ],
+    [
+      "intent differentiation",
+      true
+    ],
+    [
+      "quantity extraction",
+      true
+    ],
+    [
+      "no draft generation",
+      true
+    ],
+    [
+      "multi question",
+      true
+    ],
+    [
+      "Thai normalization",
+      true
+    ]
+  ],
+  "failures": [],
+  "fixture_type": "author-created development fixtures, NOT held-out or independent benchmark",
+  "test_environment": "JavaScript function execution, not hosted UI or Node CLI",
+  "runtime_integration": false,
+  "review_status": "draft",
+  "notes": "Weighted lexical match, not semantic ML; scores are heuristic, not probabilities. Related modules are suggestions, not observed evidence. No draft content may be generated.",
+  "initial_baseline": {
+    "top1": 60,
+    "intent": 49
+  },
+  "fixture_label_correction": "Layout question with จัด...ยังไง should be how_to, not unknown.",
+  "challenge_set": {
+    "type": "additional author-written prompts after initial tuning; not independent",
+    "count": 12,
+    "topic_or_abstention": 12,
+    "intent": 11,
+    "results": [
+      {
+        "q": "ทำไมสีจอพอพิมพ์จริงสีติดม่วง",
+        "expected": "KL-02-001",
+        "actual": "KL-02-001",
+        "expected_intent": "troubleshooting",
+        "intent": "why",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": false
+      },
+      {
+        "q": "ถ้าจะเอาดำสนิทต้องผสมสีดำยังไง",
+        "expected": "KL-02-002",
+        "actual": "KL-02-002",
+        "expected_intent": "how_to",
+        "intent": "how_to",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "เคลือบด้านบนกล่องแล้วลิ้นกาวหลุดเพราะอะไร",
+        "expected": "KL-04-004",
+        "actual": "KL-04-004",
+        "expected_intent": "troubleshooting",
+        "intent": "troubleshooting",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "รูปเบลอขยายรูปแล้วตั้ง 600 ppi ช่วยได้ไหม",
+        "expected": "KL-05-006",
+        "actual": "KL-05-006",
+        "expected_intent": "troubleshooting",
+        "intent": "troubleshooting",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ราคา offset กับ digital print แบบไหนคุ้ม",
+        "expected": "KL-03-001",
+        "actual": "KL-03-001",
+        "expected_intent": "cost_analysis",
+        "intent": "cost_analysis",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "บาร์โค้ดสแกนไม่ได้หลังพิมพ์",
+        "expected": "KL-06-005",
+        "actual": "KL-06-005",
+        "expected_intent": "troubleshooting",
+        "intent": "troubleshooting",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ฟอยล์แหว่งเกิดจากอะไร",
+        "expected": "KL-07-006",
+        "actual": "KL-07-006",
+        "expected_intent": "why",
+        "intent": "why",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ซีไอคืออะไร",
+        "expected": "KL-08-005",
+        "actual": "KL-08-005",
+        "expected_intent": "definition",
+        "intent": "definition",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "อยากลดเศษวัสดุ เพิ่มชิ้นต่อแผ่นทำอย่างไร",
+        "expected": "KL-09-003",
+        "actual": "KL-09-003",
+        "expected_intent": "how_to",
+        "intent": "how_to",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "เอไอขยายภาพแล้วจะชัดจริงไหม",
+        "expected": "KL-10-002",
+        "actual": "KL-10-002",
+        "expected_intent": "myth_busting",
+        "intent": "myth_busting",
+        "status": "matched",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "สวัสดีครับ วันนี้อากาศดี",
+        "expected": null,
+        "actual": null,
+        "expected_intent": "unknown",
+        "intent": "unknown",
+        "status": "unknown",
+        "pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "สติกเกอร์",
+        "expected": null,
+        "actual": null,
+        "expected_intent": "unknown",
+        "intent": "unknown",
+        "status": "unknown",
+        "pass": true,
+        "intent_pass": true
+      }
+    ]
+  }
+}

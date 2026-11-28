@@ -1,0 +1,1933 @@
+[
+  {
+    "id": "KL-01-001",
+    "module": "01",
+    "category": "Graphic Design",
+    "topic": "Thai typography",
+    "aliases": [
+      "สระลอย",
+      "วรรณยุกต์",
+      "ฟอนต์ไทย",
+      "leading",
+      "บรรทัด"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "ตัวอักษรไทยมีสระและวรรณยุกต์หลายระดับ จึงต้องเผื่อพื้นที่แนวตั้งและตรวจการจัดวางจริง",
+    "constraints": "ทดสอบฟอนต์และข้อความจริง ไม่ใช้ค่าระยะบรรทัดตายตัว",
+    "related_modules": [
+      "05",
+      "10"
+    ],
+    "source": {
+      "file": "01_Graphic_Design_Deep_Dive.docx",
+      "sections": [
+        "1.1.1",
+        "1.1.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-01-002",
+    "module": "01",
+    "category": "Graphic Design",
+    "topic": "Micro-typography",
+    "aliases": [
+      "kerning",
+      "tracking",
+      "ช่องไฟ",
+      "ระยะตัวอักษร"
+    ],
+    "intents": [
+      "comparison",
+      "definition"
+    ],
+    "knowledge": "Kerning ปรับช่องไฟรายคู่ ส่วน Tracking ปรับระยะในกลุ่มตัวอักษร และ Leading ควบคุมระยะบรรทัด",
+    "constraints": "พิจารณาภาษา ขนาด และความอ่านง่าย",
+    "related_modules": [
+      "08"
+    ],
+    "source": {
+      "file": "01_Graphic_Design_Deep_Dive.docx",
+      "sections": [
+        "1.1.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-01-003",
+    "module": "01",
+    "category": "Graphic Design",
+    "topic": "Gestalt and visual weight",
+    "aliases": [
+      "องค์ประกอบ",
+      "gestalt",
+      "สมดุล",
+      "งานรก"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "การจัดกลุ่ม ความใกล้กัน ความเหมือน และน้ำหนักสายตาช่วยกำหนดความสัมพันธ์ขององค์ประกอบ",
+    "constraints": "ทดสอบกับกลุ่มเป้าหมายและบริบทการอ่าน",
+    "related_modules": [
+      "08"
+    ],
+    "source": {
+      "file": "01_Graphic_Design_Deep_Dive.docx",
+      "sections": [
+        "1.2.1",
+        "1.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-01-004",
+    "module": "01",
+    "category": "Graphic Design",
+    "topic": "White space",
+    "aliases": [
+      "พื้นที่ว่าง",
+      "white space",
+      "negative space",
+      "โล่ง"
+    ],
+    "intents": [
+      "why",
+      "how_to"
+    ],
+    "knowledge": "พื้นที่ว่างช่วยแยกองค์ประกอบและทำให้จุดสำคัญโดดเด่นขึ้น",
+    "constraints": "สัดส่วนพื้นที่ว่างขึ้นกับเนื้อหาและสื่อ ไม่ใช่สูตรบังคับ",
+    "related_modules": [
+      "08"
+    ],
+    "source": {
+      "file": "01_Graphic_Design_Deep_Dive.docx",
+      "sections": [
+        "1.2.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-01-005",
+    "module": "01",
+    "category": "Graphic Design",
+    "topic": "Grid and layout",
+    "aliases": [
+      "grid",
+      "กริด",
+      "layout",
+      "เลย์เอาต์",
+      "สันเล่ม"
+    ],
+    "intents": [
+      "how_to",
+      "troubleshooting"
+    ],
+    "knowledge": "กริดช่วยให้การจัดวางหลายหน้าสม่ำเสมอ และระยะขอบต้องสัมพันธ์กับการเข้าเล่มหรือการพับ",
+    "constraints": "ตรวจแบบโครงสร้างและข้อกำหนดผู้ผลิต",
+    "related_modules": [
+      "05",
+      "06"
+    ],
+    "source": {
+      "file": "01_Graphic_Design_Deep_Dive.docx",
+      "sections": [
+        "1.3.1",
+        "1.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-01-006",
+    "module": "01",
+    "category": "Graphic Design",
+    "topic": "Visual hierarchy",
+    "aliases": [
+      "ลำดับสายตา",
+      "hierarchy",
+      "จุดเด่น",
+      "อ่านยาก"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "ขนาด ความเปรียบต่าง น้ำหนักตัวอักษร ตำแหน่งและพื้นที่ว่างช่วยจัดลำดับการอ่าน",
+    "constraints": "พฤติกรรมการอ่านไม่ได้เป็นแบบเดียวกันทุกคน",
+    "related_modules": [
+      "08"
+    ],
+    "source": {
+      "file": "01_Graphic_Design_Deep_Dive.docx",
+      "sections": [
+        "1.4.1",
+        "1.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-02-001",
+    "module": "02",
+    "category": "Color Management",
+    "topic": "RGB and CMYK gamut",
+    "aliases": [
+      "rgb",
+      "cmyk",
+      "hex",
+      "สีบนจอ",
+      "สีเพี้ยน",
+      "gamut"
+    ],
+    "intents": [
+      "definition",
+      "comparison",
+      "troubleshooting"
+    ],
+    "knowledge": "RGB อาศัยแสง ส่วน CMYK อาศัยการดูดกลืนและสะท้อนแสงของหมึกบนวัสดุ สีที่แสดงได้จึงต่างกัน",
+    "constraints": "ต้องพิจารณาโปรไฟล์ วัสดุ และสภาพแสง",
+    "related_modules": [
+      "03",
+      "05"
+    ],
+    "source": {
+      "file": "02_Color_Management_Deep_Dive.docx",
+      "sections": [
+        "2.1.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-02-002",
+    "module": "02",
+    "category": "Color Management",
+    "topic": "Rich black and TAC",
+    "aliases": [
+      "rich black",
+      "k100",
+      "ดำสนิท",
+      "ดำสี่สี",
+      "หมึกรวม",
+      "tac"
+    ],
+    "intents": [
+      "comparison",
+      "how_to"
+    ],
+    "knowledge": "สัดส่วน CMY ร่วมกับ K ส่งผลต่อความเข้มและโทนดำ ปริมาณหมึกรวมต้องสัมพันธ์กับระบบพิมพ์",
+    "constraints": "ไม่มีสูตร Rich Black เดียวที่เหมาะทุกงาน; ตรวจสเปกโรงพิมพ์",
+    "related_modules": [
+      "03",
+      "05"
+    ],
+    "source": {
+      "file": "02_Color_Management_Deep_Dive.docx",
+      "sections": [
+        "2.1.2",
+        "2.1.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-02-003",
+    "module": "02",
+    "category": "Color Management",
+    "topic": "Pantone spot color",
+    "aliases": [
+      "pantone",
+      "pms",
+      "spot color",
+      "สีพิเศษ",
+      "pantone c",
+      "pantone u"
+    ],
+    "intents": [
+      "comparison",
+      "why"
+    ],
+    "knowledge": "สีพิเศษช่วยกำหนดเป้าหมายสีและเข้าถึงบางสีที่ CMYK ทำได้ยาก ตัวอย่าง C และ U แสดงผลบนกระดาษเคลือบและไม่เคลือบ",
+    "constraints": "เทียบตัวอย่างจริง ไม่รับประกันสีจากรหัสหรือจอเพียงอย่างเดียว",
+    "related_modules": [
+      "03",
+      "04",
+      "09"
+    ],
+    "source": {
+      "file": "02_Color_Management_Deep_Dive.docx",
+      "sections": [
+        "2.2.1",
+        "2.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-02-004",
+    "module": "02",
+    "category": "Color Management",
+    "topic": "ICC and proofing",
+    "aliases": [
+      "icc",
+      "fogra",
+      "profile",
+      "rendering intent",
+      "ปรู๊ฟสี",
+      "soft proof"
+    ],
+    "intents": [
+      "how_to",
+      "definition"
+    ],
+    "knowledge": "ICC Profile อธิบายพฤติกรรมสีของอุปกรณ์และเงื่อนไขพิมพ์ ส่วนการปรู๊ฟช่วยคาดการณ์ผลลัพธ์ก่อนผลิต",
+    "constraints": "ใช้ output profile และเงื่อนไขการปรู๊ฟที่เหมาะสม",
+    "related_modules": [
+      "05",
+      "09"
+    ],
+    "source": {
+      "file": "02_Color_Management_Deep_Dive.docx",
+      "sections": [
+        "2.3.1",
+        "2.3.2",
+        "2.3.3",
+        "2.3.4"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-02-005",
+    "module": "02",
+    "category": "Color Management",
+    "topic": "Delta E",
+    "aliases": [
+      "delta e",
+      "เดลต้าอี",
+      "Δe",
+      "lab",
+      "วัดสี"
+    ],
+    "intents": [
+      "definition",
+      "quality_control"
+    ],
+    "knowledge": "Delta E ใช้แสดงความแตกต่างของสีที่วัดได้กับสีอ้างอิง",
+    "constraints": "ต้องระบุสูตร เครื่องมือ เงื่อนไขการวัดและเกณฑ์ยอมรับร่วมกัน",
+    "related_modules": [
+      "09"
+    ],
+    "source": {
+      "file": "02_Color_Management_Deep_Dive.docx",
+      "sections": [
+        "2.4.1",
+        "2.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-02-006",
+    "module": "02",
+    "category": "Color Management",
+    "topic": "Metamerism",
+    "aliases": [
+      "metamerism",
+      "สีเปลี่ยนตามแสง",
+      "d50",
+      "แสงห้าง",
+      "oba"
+    ],
+    "intents": [
+      "troubleshooting",
+      "definition"
+    ],
+    "knowledge": "สีสองชิ้นอาจดูเหมือนกันภายใต้แสงชนิดหนึ่งแต่ต่างกันเมื่อเปลี่ยนแสง",
+    "constraints": "ตรวจตามสภาพแสงและโหมดวัดที่ตกลงไว้",
+    "related_modules": [
+      "04",
+      "09"
+    ],
+    "source": {
+      "file": "02_Color_Management_Deep_Dive.docx",
+      "sections": [
+        "2.4.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-03-001",
+    "module": "03",
+    "category": "Printing Technology",
+    "topic": "Offset versus digital",
+    "aliases": [
+      "offset",
+      "ออฟเซ็ต",
+      "digital printing",
+      "ดิจิทัล",
+      "พิมพ์น้อย"
+    ],
+    "intents": [
+      "comparison",
+      "recommendation"
+    ],
+    "knowledge": "Offset ถ่ายทอดหมึกผ่านผ้ายางและใช้เพลท ส่วน Digital โดยทั่วไปไม่ต้องทำเพลทแยกสำหรับแต่ละแบบ",
+    "constraints": "เทียบต้นทุนตามจำนวนต่อ SKU วัสดุ คุณภาพและเวลา",
+    "related_modules": [
+      "09"
+    ],
+    "source": {
+      "file": "03_Printing_Technology_Deep_Dive.docx",
+      "sections": [
+        "3.1.1",
+        "3.2.1",
+        "3.4.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-03-002",
+    "module": "03",
+    "category": "Printing Technology",
+    "topic": "AM and FM screening",
+    "aliases": [
+      "am screening",
+      "fm screening",
+      "เม็ดสกรีน",
+      "moire",
+      "มัวเร"
+    ],
+    "intents": [
+      "comparison",
+      "definition"
+    ],
+    "knowledge": "AM เปลี่ยนขนาดเม็ดสกรีนบนตำแหน่งที่สม่ำเสมอ ส่วน FM ควบคุมความหนาแน่นของเม็ด",
+    "constraints": "ผลลัพธ์ขึ้นกับ RIP เครื่องพิมพ์ วัสดุ และการควบคุมกระบวนการ",
+    "related_modules": [
+      "02",
+      "05"
+    ],
+    "source": {
+      "file": "03_Printing_Technology_Deep_Dive.docx",
+      "sections": [
+        "3.1.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-03-003",
+    "module": "03",
+    "category": "Printing Technology",
+    "topic": "Inkjet ink selection",
+    "aliases": [
+      "inkjet",
+      "อิงค์เจ็ท",
+      "uv ink",
+      "eco-solvent",
+      "หมึกพิมพ์",
+      "ทนแดด"
+    ],
+    "intents": [
+      "comparison",
+      "recommendation"
+    ],
+    "knowledge": "หมึกอิงก์เจ็ตหลายประเภทมีเคมีและวิธีทำให้แห้งหรือแข็งตัวต่างกัน จึงเหมาะกับวัสดุและสภาพใช้งานต่างกัน",
+    "constraints": "ตรวจความเข้ากันได้ของหมึกและวัสดุจากผู้ผลิต",
+    "related_modules": [
+      "04"
+    ],
+    "source": {
+      "file": "03_Printing_Technology_Deep_Dive.docx",
+      "sections": [
+        "3.2.2",
+        "3.2.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-03-004",
+    "module": "03",
+    "category": "Printing Technology",
+    "topic": "Gravure and flexography",
+    "aliases": [
+      "gravure",
+      "กราเวียร์",
+      "flexo",
+      "เฟล็กโซ",
+      "anilox",
+      "doctor blade"
+    ],
+    "intents": [
+      "comparison",
+      "definition"
+    ],
+    "knowledge": "Gravure ใช้หลุมบนลูกกลิ้งแม่พิมพ์ ส่วน Flexo ใช้แม่พิมพ์พื้นนูนและ Anilox ตวงหมึก",
+    "constraints": "เลือกตามชนิดวัสดุ จำนวนผลิต ความละเอียด และต้นทุนแม่พิมพ์",
+    "related_modules": [
+      "04",
+      "09"
+    ],
+    "source": {
+      "file": "03_Printing_Technology_Deep_Dive.docx",
+      "sections": [
+        "3.3.1",
+        "3.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-03-005",
+    "module": "03",
+    "category": "Printing Technology",
+    "topic": "Roll label winding",
+    "aliases": [
+      "ฉลากม้วน",
+      "สติ๊กเกอร์ม้วน",
+      "unwind",
+      "แกนม้วน",
+      "sensor"
+    ],
+    "intents": [
+      "troubleshooting",
+      "quality_control"
+    ],
+    "knowledge": "ฉลากสำหรับเครื่องติดอัตโนมัติต้องระบุทิศคลายม้วน ขนาดแกน ขนาดม้วนและเงื่อนไขการอ่านเซ็นเซอร์",
+    "constraints": "ตรวจคู่มือเครื่องติดฉลากจริง",
+    "related_modules": [
+      "06",
+      "09"
+    ],
+    "source": {
+      "file": "03_Printing_Technology_Deep_Dive.docx",
+      "sections": [
+        "3.4.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-03-006",
+    "module": "03",
+    "category": "Printing Technology",
+    "topic": "Print defects",
+    "aliases": [
+      "toner cracking",
+      "สีแตกตรงพับ",
+      "banding",
+      "ghosting",
+      "หมึกเป็นเส้น"
+    ],
+    "intents": [
+      "troubleshooting"
+    ],
+    "knowledge": "ข้อบกพร่องต้องแยกตามเทคโนโลยี เช่น โทนเนอร์แตกร้าวตามรอยพับ หรือ Banding ใน Inkjet",
+    "constraints": "ตรวจวัสดุ เครื่องจักร และสภาพจริงก่อนระบุสาเหตุ",
+    "related_modules": [
+      "04",
+      "07",
+      "09"
+    ],
+    "source": {
+      "file": "03_Printing_Technology_Deep_Dive.docx",
+      "sections": [
+        "3.5.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-04-001",
+    "module": "04",
+    "category": "Material Science",
+    "topic": "Paper grammage and thickness",
+    "aliases": [
+      "แกรม",
+      "gsm",
+      "caliper",
+      "bulk",
+      "กระดาษหนา"
+    ],
+    "intents": [
+      "comparison",
+      "definition"
+    ],
+    "knowledge": "GSM คือมวลต่อพื้นที่ ไม่ใช่ความหนา กระดาษน้ำหนักเท่ากันอาจมีความหนาและความแข็งต่างกัน",
+    "constraints": "เทียบ datasheet และตัวอย่างกระดาษจริง",
+    "related_modules": [
+      "06",
+      "09"
+    ],
+    "source": {
+      "file": "04_Material_Science_Deep_Dive.docx",
+      "sections": [
+        "4.1.1",
+        "4.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-04-002",
+    "module": "04",
+    "category": "Material Science",
+    "topic": "Corrugated board strength",
+    "aliases": [
+      "ลูกฟูก",
+      "ect",
+      "bct",
+      "ลอน",
+      "รับน้ำหนัก"
+    ],
+    "intents": [
+      "recommendation",
+      "quality_control"
+    ],
+    "knowledge": "กล่องลูกฟูกประกอบด้วยแผ่นผิวและลอน โครงสร้างและคุณภาพวัสดุมีผลต่อการรับแรง",
+    "constraints": "ยืนยันความแข็งแรงด้วยการทดสอบและเงื่อนไขการขนส่ง",
+    "related_modules": [
+      "06",
+      "09"
+    ],
+    "source": {
+      "file": "04_Material_Science_Deep_Dive.docx",
+      "sections": [
+        "4.1.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-04-003",
+    "module": "04",
+    "category": "Material Science",
+    "topic": "Polymer film selection",
+    "aliases": [
+      "pp",
+      "pet",
+      "pvc",
+      "pe",
+      "ไวนิล",
+      "ฟิล์ม"
+    ],
+    "intents": [
+      "comparison",
+      "material_selection"
+    ],
+    "knowledge": "ฟิล์มแต่ละชนิดมีความคงรูป ความยืดหยุ่นและความทนทานต่างกัน",
+    "constraints": "คุณสมบัติขึ้นกับเกรด ความหนา และการใช้งานจริง",
+    "related_modules": [
+      "03",
+      "06"
+    ],
+    "source": {
+      "file": "04_Material_Science_Deep_Dive.docx",
+      "sections": [
+        "4.2.1",
+        "4.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-04-004",
+    "module": "04",
+    "category": "Material Science",
+    "topic": "Adhesion and surface energy",
+    "aliases": [
+      "กาวไม่ติด",
+      "สติกเกอร์หลุด",
+      "สติ๊กเกอร์หลุด",
+      "lse",
+      "dyne",
+      "กาว",
+      "corona"
+    ],
+    "intents": [
+      "troubleshooting",
+      "material_selection"
+    ],
+    "knowledge": "แรงยึดเกาะขึ้นกับเคมีกาว พลังงานพื้นผิว และสภาพพื้นผิว; การกันน้ำของฟิล์มไม่ใช่การรับประกันแรงยึดติด",
+    "constraints": "ทดสอบกับภาชนะจริงและเงื่อนไขใช้งาน",
+    "related_modules": [
+      "03",
+      "06",
+      "09"
+    ],
+    "source": {
+      "file": "04_Material_Science_Deep_Dive.docx",
+      "sections": [
+        "4.3.1",
+        "4.3.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-04-005",
+    "module": "04",
+    "category": "Material Science",
+    "topic": "Freezer label",
+    "aliases": [
+      "แช่แข็ง",
+      "freezer",
+      "ติดตอนเย็น",
+      "อุณหภูมิกาว"
+    ],
+    "intents": [
+      "comparison",
+      "material_selection"
+    ],
+    "knowledge": "อุณหภูมิขณะติดฉลากและอุณหภูมิระหว่างใช้งานเป็นเงื่อนไขคนละอย่าง",
+    "constraints": "ตรวจเกรดกาว การควบแน่น และข้อมูลผู้ผลิต",
+    "related_modules": [
+      "06"
+    ],
+    "source": {
+      "file": "04_Material_Science_Deep_Dive.docx",
+      "sections": [
+        "4.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-04-006",
+    "module": "04",
+    "category": "Material Science",
+    "topic": "Food contact and sustainability",
+    "aliases": [
+      "food contact",
+      "migration",
+      "สัมผัสอาหาร",
+      "mono material",
+      "pcr",
+      "รีไซเคิล"
+    ],
+    "intents": [
+      "risk_analysis",
+      "material_selection"
+    ],
+    "knowledge": "การเลือกวัสดุต้องพิจารณาการสัมผัสอาหาร การซึมผ่าน และระบบจัดการวัสดุหลังใช้งาน",
+    "constraints": "ตรวจเอกสารรับรอง กฎหมายตามตลาด และเงื่อนไขสัมผัสจริง",
+    "related_modules": [
+      "06",
+      "07"
+    ],
+    "source": {
+      "file": "04_Material_Science_Deep_Dive.docx",
+      "sections": [
+        "4.4.1",
+        "4.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-05-001",
+    "module": "05",
+    "category": "Prepress & Artwork",
+    "topic": "Bleed and trim",
+    "aliases": [
+      "bleed",
+      "ตัดตก",
+      "safe margin",
+      "trimbox",
+      "ขอบขาว"
+    ],
+    "intents": [
+      "definition",
+      "why"
+    ],
+    "knowledge": "Bleed ขยายภาพพ้นเส้นตัด ส่วน Safe Margin กันองค์ประกอบสำคัญจากขอบตัด",
+    "constraints": "ใช้ระยะตามสเปกงานจริง ไม่กำหนด 3 มม. ทุกกรณี",
+    "related_modules": [
+      "06",
+      "10"
+    ],
+    "source": {
+      "file": "05_Prepress_and_Artwork_Deep_Dive.docx",
+      "sections": [
+        "5.1.1",
+        "5.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-05-002",
+    "module": "05",
+    "category": "Prepress & Artwork",
+    "topic": "Trapping and registration",
+    "aliases": [
+      "trapping",
+      "สีเหลื่อม",
+      "registration",
+      "choke",
+      "spread"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "Trapping ใช้พื้นที่ซ้อนเหลื่อมเพื่อช่วยลดช่องว่างจากความคลาดเคลื่อนของการพิมพ์",
+    "constraints": "ต้องสัมพันธ์กับเทคโนโลยี วัสดุ และ RIP",
+    "related_modules": [
+      "02",
+      "03"
+    ],
+    "source": {
+      "file": "05_Prepress_and_Artwork_Deep_Dive.docx",
+      "sections": [
+        "5.2.1",
+        "5.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-05-003",
+    "module": "05",
+    "category": "Prepress & Artwork",
+    "topic": "Overprint and knockout",
+    "aliases": [
+      "overprint",
+      "knockout",
+      "โลโก้ขาวหาย",
+      "พิมพ์ทับ"
+    ],
+    "intents": [
+      "comparison",
+      "troubleshooting"
+    ],
+    "knowledge": "Overprint และ Knockout กำหนดว่าหมึกด้านล่างจะคงอยู่หรือถูกเว้น วัตถุ CMYK ขาวที่ตั้ง Overprint อาจหายเมื่อแยกสี",
+    "constraints": "ตรวจ Separation Preview และอย่าสับสนกับเพลทหมึกขาวจริง",
+    "related_modules": [
+      "02",
+      "10"
+    ],
+    "source": {
+      "file": "05_Prepress_and_Artwork_Deep_Dive.docx",
+      "sections": [
+        "5.3.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-05-004",
+    "module": "05",
+    "category": "Prepress & Artwork",
+    "topic": "PDF/X and transparency",
+    "aliases": [
+      "pdf/x-1a",
+      "pdf/x-4",
+      "transparency",
+      "flatten",
+      "rip"
+    ],
+    "intents": [
+      "comparison",
+      "recommendation"
+    ],
+    "knowledge": "PDF/X-1a ใช้ความโปร่งแสงที่ผ่านการ flatten แล้ว ส่วน PDF/X-4 รองรับ live transparency",
+    "constraints": "เลือกตามข้อกำหนดและความสามารถของ workflow โรงพิมพ์",
+    "related_modules": [
+      "03",
+      "10"
+    ],
+    "source": {
+      "file": "05_Prepress_and_Artwork_Deep_Dive.docx",
+      "sections": [
+        "5.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-05-005",
+    "module": "05",
+    "category": "Prepress & Artwork",
+    "topic": "Separations and imposition",
+    "aliases": [
+      "separation",
+      "เพลท",
+      "หมึกขาว",
+      "white underbase",
+      "จัดเพลท",
+      "imposition"
+    ],
+    "intents": [
+      "how_to",
+      "quality_control"
+    ],
+    "knowledge": "แยก Artwork สีพิเศษ หมึกขาว และข้อมูลเทคนิคตามข้อกำหนดการผลิต ส่วน Imposition จัดตำแหน่งงานลงแผ่นพิมพ์",
+    "constraints": "ยืนยัน naming, non-printing technical layers และสเปก RIP",
+    "related_modules": [
+      "06",
+      "07",
+      "09",
+      "10"
+    ],
+    "source": {
+      "file": "05_Prepress_and_Artwork_Deep_Dive.docx",
+      "sections": [
+        "5.4.1",
+        "5.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-05-006",
+    "module": "05",
+    "category": "Prepress & Artwork",
+    "topic": "Effective PPI",
+    "aliases": [
+      "dpi",
+      "ppi",
+      "pixel",
+      "ภาพแตก",
+      "ความละเอียด",
+      "ภาพเบลอ"
+    ],
+    "intents": [
+      "troubleshooting",
+      "definition"
+    ],
+    "knowledge": "ความละเอียดของภาพที่ขนาดพิมพ์จริงขึ้นกับจำนวนพิกเซลและขนาดวางภาพ การเพิ่มขนาดโดยไม่เพิ่มพิกเซลทำให้ Effective PPI ลดลง",
+    "constraints": "เกณฑ์ความละเอียดขึ้นกับระยะมอง ระบบพิมพ์ และประเภทสื่อ",
+    "related_modules": [
+      "01",
+      "10"
+    ],
+    "source": {
+      "file": "05_Prepress_and_Artwork_Deep_Dive.docx",
+      "sections": [
+        "5.5.1",
+        "5.5.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-06-001",
+    "module": "06",
+    "category": "Packaging Design",
+    "topic": "Packaging structure",
+    "aliases": [
+      "กล่องฝาเสียบ",
+      "auto lock",
+      "โครงสร้างกล่อง",
+      "rte",
+      "fefco",
+      "ecma"
+    ],
+    "intents": [
+      "comparison",
+      "recommendation"
+    ],
+    "knowledge": "โครงสร้างบรรจุภัณฑ์ต้องตอบโจทย์การปกป้องสินค้า การใช้งาน การขนส่ง และการผลิต",
+    "constraints": "ยืนยันรหัสโครงสร้างและทดสอบน้ำหนักจริง",
+    "related_modules": [
+      "04",
+      "09"
+    ],
+    "source": {
+      "file": "06_Packaging_Design_Deep_Dive.docx",
+      "sections": [
+        "6.1.1",
+        "6.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-06-002",
+    "module": "06",
+    "category": "Packaging Design",
+    "topic": "White dummy and dimensions",
+    "aliases": [
+      "white dummy",
+      "กล่องตัวอย่าง",
+      "id od",
+      "ขนาดภายใน",
+      "สินค้ายัดไม่ลง"
+    ],
+    "intents": [
+      "why",
+      "troubleshooting"
+    ],
+    "knowledge": "ควรตรวจขนาดภายใน ความหนาวัสดุ และความพอดีกับสินค้าจริงด้วยตัวอย่างโครงสร้างก่อนทำแม่พิมพ์",
+    "constraints": "ระยะเผื่อขึ้นกับวัสดุและรูปแบบการพับ",
+    "related_modules": [
+      "04",
+      "09"
+    ],
+    "source": {
+      "file": "06_Packaging_Design_Deep_Dive.docx",
+      "sections": [
+        "6.1.3",
+        "6.5.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-06-003",
+    "module": "06",
+    "category": "Packaging Design",
+    "topic": "Dieline anatomy",
+    "aliases": [
+      "dieline",
+      "ไดคัท",
+      "เส้นพับ",
+      "cut line",
+      "crease",
+      "glue flap"
+    ],
+    "intents": [
+      "definition",
+      "how_to"
+    ],
+    "knowledge": "แบบคลี่แสดงโครงสร้างกล่องบนระนาบ และต้องจำแนกเส้นตัด พับ ปรุ และพื้นที่ปะกาว",
+    "constraints": "ตรวจมุมมองด้านพิมพ์ สเกล และข้อกำหนดผู้ผลิต",
+    "related_modules": [
+      "05",
+      "10"
+    ],
+    "source": {
+      "file": "06_Packaging_Design_Deep_Dive.docx",
+      "sections": [
+        "6.2.1",
+        "6.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-06-004",
+    "module": "06",
+    "category": "Packaging Design",
+    "topic": "Label geometry",
+    "aliases": [
+      "ฉลากย่น",
+      "แก้วทรงกรวย",
+      "ขวดทรงกรวย",
+      "label geometry"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "ฉลากพันภาชนะต้องสัมพันธ์กับรูปทรง ทรงกรวยอาจต้องใช้ฉลากรูปโค้งแทนรูปสี่เหลี่ยม",
+    "constraints": "ทดสอบฉลากกับภาชนะจริงก่อนผลิต",
+    "related_modules": [
+      "04",
+      "10"
+    ],
+    "source": {
+      "file": "06_Packaging_Design_Deep_Dive.docx",
+      "sections": [
+        "6.3.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-06-005",
+    "module": "06",
+    "category": "Packaging Design",
+    "topic": "Label compliance and barcode",
+    "aliases": [
+      "บาร์โค้ด",
+      "barcode",
+      "quiet zone",
+      "gs1",
+      "เลข อย.",
+      "ฉลากอาหาร"
+    ],
+    "intents": [
+      "quality_control",
+      "risk_analysis"
+    ],
+    "knowledge": "ฉลากต้องตรวจความถูกต้องของข้อมูลและบาร์โค้ด รวมทั้งพื้นที่ว่างและความเปรียบต่างในการอ่าน",
+    "constraints": "ข้อกฎหมายและตัวเลขมาตรฐานต้องตรวจจากแหล่งต้นทางล่าสุด",
+    "related_modules": [
+      "05",
+      "09",
+      "10"
+    ],
+    "source": {
+      "file": "06_Packaging_Design_Deep_Dive.docx",
+      "sections": [
+        "6.3.2",
+        "6.3.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-06-006",
+    "module": "06",
+    "category": "Packaging Design",
+    "topic": "Sustainable packaging",
+    "aliases": [
+      "รักษ์โลก",
+      "คราฟท์",
+      "lca",
+      "รีไซเคิล",
+      "eco design"
+    ],
+    "intents": [
+      "myth_busting",
+      "recommendation"
+    ],
+    "knowledge": "ความยั่งยืนของบรรจุภัณฑ์ต้องพิจารณาวัฏจักรชีวิต ไม่ใช่ตัดสินจากสีหรือรูปลักษณ์วัสดุเท่านั้น",
+    "constraints": "ตรวจระบบรีไซเคิลและหลักฐานผลกระทบจริง",
+    "related_modules": [
+      "04",
+      "07",
+      "08"
+    ],
+    "source": {
+      "file": "06_Packaging_Design_Deep_Dive.docx",
+      "sections": [
+        "6.4.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-07-001",
+    "module": "07",
+    "category": "Special Finishing",
+    "topic": "Lamination finish",
+    "aliases": [
+      "เคลือบด้าน",
+      "เคลือบเงา",
+      "soft touch",
+      "anti scratch",
+      "สีดรอป"
+    ],
+    "intents": [
+      "comparison",
+      "troubleshooting"
+    ],
+    "knowledge": "ฟิล์มเคลือบเปลี่ยนการสะท้อนแสง ผิวสัมผัส และการปกป้องงานพิมพ์; ผิวด้านบางเกรดอาจเห็นรอยขีดได้ชัด",
+    "constraints": "อนุมัติสีและทดสอบรอยจากชิ้นงานเคลือบจริง",
+    "related_modules": [
+      "02",
+      "04"
+    ],
+    "source": {
+      "file": "07_Special_Finishing_Deep_Dive.docx",
+      "sections": [
+        "7.1.1",
+        "7.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-07-002",
+    "module": "07",
+    "category": "Special Finishing",
+    "topic": "Spot UV",
+    "aliases": [
+      "spot uv",
+      "สปอตยูวี",
+      "ยูวีเฉพาะจุด",
+      "uv แตก"
+    ],
+    "intents": [
+      "definition",
+      "troubleshooting"
+    ],
+    "knowledge": "Spot UV เป็นชั้นน้ำยาเคลือบเฉพาะตำแหน่งที่สร้างความเงาหรือความนูน",
+    "constraints": "ตรวจการยึดเกาะ แนวพับ ความหนา และ registration",
+    "related_modules": [
+      "05",
+      "04"
+    ],
+    "source": {
+      "file": "07_Special_Finishing_Deep_Dive.docx",
+      "sections": [
+        "7.2.1",
+        "7.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-07-003",
+    "module": "07",
+    "category": "Special Finishing",
+    "topic": "Foil stamping",
+    "aliases": [
+      "ฟอยล์",
+      "ปั๊มเค",
+      "hot foil",
+      "cold foil",
+      "digital foil",
+      "ฟอยล์ตัน"
+    ],
+    "intents": [
+      "comparison",
+      "troubleshooting"
+    ],
+    "knowledge": "ระบบฟอยล์ใช้กลไกถ่ายโอนต่างกัน และรายละเอียดเส้นหรือช่องไฟที่แคบอาจทำให้ฟอยล์ตัน",
+    "constraints": "ทดสอบเกรดฟอยล์ วัสดุ บล็อก และสเปกเครื่อง",
+    "related_modules": [
+      "05",
+      "09"
+    ],
+    "source": {
+      "file": "07_Special_Finishing_Deep_Dive.docx",
+      "sections": [
+        "7.3.1",
+        "7.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-07-004",
+    "module": "07",
+    "category": "Special Finishing",
+    "topic": "Emboss and deboss",
+    "aliases": [
+      "ปั๊มนูน",
+      "ปั๊มจม",
+      "emboss",
+      "deboss"
+    ],
+    "intents": [
+      "comparison",
+      "definition"
+    ],
+    "knowledge": "Emboss และ Deboss เปลี่ยนรูปเนื้อวัสดุด้วยแม่พิมพ์ ต่างจากการเพิ่มชั้นเคลือบ",
+    "constraints": "ตรวจความลึก เส้นใย รอยด้านหลังและตำแหน่งพับ",
+    "related_modules": [
+      "04",
+      "05"
+    ],
+    "source": {
+      "file": "07_Special_Finishing_Deep_Dive.docx",
+      "sections": [
+        "7.4.1",
+        "7.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-07-005",
+    "module": "07",
+    "category": "Special Finishing",
+    "topic": "Finishing strategy",
+    "aliases": [
+      "กล่องดูแพง",
+      "พรีเมียม",
+      "เทคนิคพิเศษ",
+      "งบน้อย"
+    ],
+    "intents": [
+      "recommendation",
+      "cost_analysis"
+    ],
+    "knowledge": "เลือกเทคนิคตกแต่งตามจุดเด่นที่ต้องการและ Positioning ไม่จำเป็นต้องใช้ทุกเทคนิคในชิ้นเดียว",
+    "constraints": "ตรวจลำดับกระบวนการ ความเข้ากันได้ และต้นทุนจริง",
+    "related_modules": [
+      "08",
+      "09"
+    ],
+    "source": {
+      "file": "07_Special_Finishing_Deep_Dive.docx",
+      "sections": [
+        "7.5.1",
+        "7.5.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-07-006",
+    "module": "07",
+    "category": "Special Finishing",
+    "topic": "Finishing defects",
+    "aliases": [
+      "ฟอยล์หลุด",
+      "ฟิล์มเป็นฟอง",
+      "silvering",
+      "ฟอยล์แหว่ง",
+      "registration shift"
+    ],
+    "intents": [
+      "troubleshooting"
+    ],
+    "knowledge": "ปัญหาหลังพิมพ์อาจเกี่ยวกับการอบหมึก การยึดเกาะ แรงกด อุณหภูมิ และการเปลี่ยนขนาดวัสดุ",
+    "constraints": "ตรวจตัวอย่างและข้อมูลกระบวนการก่อนสรุปรากปัญหา",
+    "related_modules": [
+      "04",
+      "09"
+    ],
+    "source": {
+      "file": "07_Special_Finishing_Deep_Dive.docx",
+      "sections": [
+        "7.5.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-08-001",
+    "module": "08",
+    "category": "Branding & Marketing",
+    "topic": "Brand foundations",
+    "aliases": [
+      "brand strategy",
+      "กลยุทธ์แบรนด์",
+      "purpose",
+      "jtbd",
+      "บุคลิกแบรนด์"
+    ],
+    "intents": [
+      "definition",
+      "why"
+    ],
+    "knowledge": "กลยุทธ์แบรนด์เชื่อมรากฐานธุรกิจ กลุ่มเป้าหมาย จุดยืน บุคลิก และการสื่อสารผ่านภาพ",
+    "constraints": "เริ่มจากโจทย์ธุรกิจ ไม่ใช่เลือกสไตล์ภาพก่อน",
+    "related_modules": [
+      "01",
+      "06"
+    ],
+    "source": {
+      "file": "08_Branding_and_Marketing_Deep_Dive.docx",
+      "sections": [
+        "8.1.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-08-002",
+    "module": "08",
+    "category": "Branding & Marketing",
+    "topic": "Brand architecture",
+    "aliases": [
+      "brand architecture",
+      "หลาย sku",
+      "แบรนด์ลูก",
+      "sub brand"
+    ],
+    "intents": [
+      "recommendation",
+      "comparison"
+    ],
+    "knowledge": "การจัดความสัมพันธ์แบรนด์หลักและแบรนด์ย่อยส่งผลต่อความสม่ำเสมอและการบริหารหลายสินค้า",
+    "constraints": "เลือกโครงสร้างตามกลยุทธ์และทรัพยากร",
+    "related_modules": [
+      "06",
+      "09"
+    ],
+    "source": {
+      "file": "08_Branding_and_Marketing_Deep_Dive.docx",
+      "sections": [
+        "8.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-08-003",
+    "module": "08",
+    "category": "Branding & Marketing",
+    "topic": "Positioning",
+    "aliases": [
+      "positioning",
+      "จุดยืน",
+      "pop",
+      "pod",
+      "uvp",
+      "กลุ่มเป้าหมาย"
+    ],
+    "intents": [
+      "recommendation",
+      "definition"
+    ],
+    "knowledge": "Positioning และคุณค่าที่แตกต่างช่วยกำหนดทิศทางการออกแบบและสเปกวัสดุให้สอดคล้องกับกลุ่มเป้าหมาย",
+    "constraints": "ทดสอบสมมติฐานกับตลาด ไม่ใช้สไตล์เป็นหลักฐานความสำเร็จ",
+    "related_modules": [
+      "01",
+      "06",
+      "07"
+    ],
+    "source": {
+      "file": "08_Branding_and_Marketing_Deep_Dive.docx",
+      "sections": [
+        "8.2.1",
+        "8.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-08-004",
+    "module": "08",
+    "category": "Branding & Marketing",
+    "topic": "Responsive logo",
+    "aliases": [
+      "โลโก้",
+      "responsive logo",
+      "clear space",
+      "โลโก้ย่อ",
+      "สกรีนโลโก้"
+    ],
+    "intents": [
+      "how_to",
+      "troubleshooting"
+    ],
+    "knowledge": "โลโก้ควรมีรูปแบบที่รองรับหลายขนาด สื่อ และข้อจำกัดการผลิต รวมถึงแบบสีเดียวเมื่อจำเป็น",
+    "constraints": "ตรวจขนาดขั้นต่ำกับงานจริงและเทคโนโลยีพิมพ์",
+    "related_modules": [
+      "01",
+      "03",
+      "05",
+      "10"
+    ],
+    "source": {
+      "file": "08_Branding_and_Marketing_Deep_Dive.docx",
+      "sections": [
+        "8.3.1",
+        "8.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-08-005",
+    "module": "08",
+    "category": "Branding & Marketing",
+    "topic": "Corporate identity",
+    "aliases": [
+      "ci",
+      "corporate identity",
+      "brand guideline",
+      "คู่มือแบรนด์",
+      "สีแบรนด์"
+    ],
+    "intents": [
+      "definition",
+      "why"
+    ],
+    "knowledge": "CI ช่วยกำหนดการใช้โลโก้ สี ตัวอักษร กราฟิกและสินทรัพย์ร่วมกันในหลายสื่อ",
+    "constraints": "กฎสีและสัดส่วนเป็นแนวทาง ไม่ใช่สูตรตายตัว",
+    "related_modules": [
+      "01",
+      "02",
+      "10"
+    ],
+    "source": {
+      "file": "08_Branding_and_Marketing_Deep_Dive.docx",
+      "sections": [
+        "8.4.1",
+        "8.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-08-006",
+    "module": "08",
+    "category": "Branding & Marketing",
+    "topic": "Brand refresh",
+    "aliases": [
+      "rebranding",
+      "brand refresh",
+      "เปลี่ยนแพ็กเกจ",
+      "จำแบรนด์ไม่ได้",
+      "mascot",
+      "dba"
+    ],
+    "intents": [
+      "risk_analysis",
+      "troubleshooting"
+    ],
+    "knowledge": "การปรับภาพลักษณ์ควรระบุองค์ประกอบที่ลูกค้าจดจำและพิจารณาว่าอะไรควรรักษาไว้",
+    "constraints": "ผลต่อยอดขายต้องทดสอบ ไม่สรุปจากความสวยเพียงอย่างเดียว",
+    "related_modules": [
+      "01",
+      "06"
+    ],
+    "source": {
+      "file": "08_Branding_and_Marketing_Deep_Dive.docx",
+      "sections": [
+        "8.4.2",
+        "8.5.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-09-001",
+    "module": "09",
+    "category": "Production Management",
+    "topic": "QC and AQL",
+    "aliases": [
+      "aql",
+      "สุ่มตรวจ",
+      "iqc",
+      "ipqc",
+      "fqc",
+      "ตรวจรับ",
+      "golden sample"
+    ],
+    "intents": [
+      "definition",
+      "quality_control"
+    ],
+    "knowledge": "QC ควรครอบคลุมก่อนผลิต ระหว่างผลิต และก่อนส่งมอบ ส่วน AQL ใช้ร่วมกับแผนสุ่มและเกณฑ์ยอมรับล็อต",
+    "constraints": "ตาราง Ac/Re และเกณฑ์ต้องยืนยันจากมาตรฐานและข้อตกลงจริง ไม่ใช้ AQL เป็นเปอร์เซ็นต์ของเสียที่รับประกัน",
+    "related_modules": [
+      "02",
+      "03"
+    ],
+    "source": {
+      "file": "09_Production_Management_Deep_Dive.docx",
+      "sections": [
+        "9.1.1",
+        "9.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-09-002",
+    "module": "09",
+    "category": "Production Management",
+    "topic": "Fixed and variable cost",
+    "aliases": [
+      "ต้นทุน",
+      "ราคาไม่ต่าง",
+      "ค่าตั้งเครื่อง",
+      "ค่าเพลท",
+      "fixed cost"
+    ],
+    "intents": [
+      "cost_analysis",
+      "why"
+    ],
+    "knowledge": "ต้นทุนตั้งต้นต่อรอบถูกเฉลี่ยไปในจำนวนชิ้นงาน ส่วนต้นทุนผันแปรสัมพันธ์กับปริมาณผลิต",
+    "constraints": "เปรียบเทียบตามสเปกเดียวกันและรวมของเสียและขนส่ง",
+    "related_modules": [
+      "03",
+      "07"
+    ],
+    "source": {
+      "file": "09_Production_Management_Deep_Dive.docx",
+      "sections": [
+        "9.2.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-09-003",
+    "module": "09",
+    "category": "Production Management",
+    "topic": "Value engineering",
+    "aliases": [
+      "ลดต้นทุน",
+      "sheet yield",
+      "จัดวาง",
+      "ประหยัดกระดาษ",
+      "ใบเสนอราคา"
+    ],
+    "intents": [
+      "cost_analysis",
+      "how_to"
+    ],
+    "knowledge": "ปรับแบบและการจัดวางเพื่อเพิ่มจำนวนชิ้นต่อแผ่น ลดรอบผลิต และลดต้นทุนแฝงได้โดยไม่จำเป็นต้องลดเกรดวัสดุ",
+    "constraints": "ต้องตรวจความพอดี ข้อจำกัดเครื่อง และราคาจริง ไม่รับประกันเปอร์เซ็นต์",
+    "related_modules": [
+      "05",
+      "06",
+      "07"
+    ],
+    "source": {
+      "file": "09_Production_Management_Deep_Dive.docx",
+      "sections": [
+        "9.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-09-004",
+    "module": "09",
+    "category": "Production Management",
+    "topic": "Lead time and reorder point",
+    "aliases": [
+      "lead time",
+      "ส่งงานช้า",
+      "คิวโรงพิมพ์",
+      "rop",
+      "สต็อก"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "ระยะเวลาผลิตขึ้นกับการอนุมัติ วัสดุ คิวพิมพ์และหลังพิมพ์; จุดสั่งซ้ำพิจารณาการใช้ระหว่างรอสินค้าและ safety stock",
+    "constraints": "ใช้ข้อมูล lead time และการใช้จริงของธุรกิจ",
+    "related_modules": [
+      "03",
+      "07"
+    ],
+    "source": {
+      "file": "09_Production_Management_Deep_Dive.docx",
+      "sections": [
+        "9.3.1",
+        "9.3.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-09-005",
+    "module": "09",
+    "category": "Production Management",
+    "topic": "MOQ strategy",
+    "aliases": [
+      "moq",
+      "ขั้นต่ำ",
+      "ล็อตเล็ก",
+      "สั่งน้อย",
+      "shared die",
+      "gang run"
+    ],
+    "intents": [
+      "recommendation",
+      "cost_analysis"
+    ],
+    "knowledge": "MOQ เกี่ยวข้องกับต้นทุนตั้งต้น วัตถุดิบ และของเสียตั้งเครื่อง; การใช้โครงสร้างร่วม พิมพ์รวม หรือเริ่มจาก Digital อาจช่วยลดข้อจำกัด",
+    "constraints": "ตรวจสเปก จำนวนต่อแบบ ข้อผูกพัน และต้นทุนจริง",
+    "related_modules": [
+      "03",
+      "06"
+    ],
+    "source": {
+      "file": "09_Production_Management_Deep_Dive.docx",
+      "sections": [
+        "9.4.1",
+        "9.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-09-006",
+    "module": "09",
+    "category": "Production Management",
+    "topic": "Defect and CAPA",
+    "aliases": [
+      "capa",
+      "5 why",
+      "5m1e",
+      "ของเสีย",
+      "เคลม",
+      "ncr",
+      "รากปัญหา"
+    ],
+    "intents": [
+      "troubleshooting",
+      "quality_control"
+    ],
+    "knowledge": "จำแนกความรุนแรงตามผลกระทบ แล้ววิเคราะห์คน เครื่อง วัสดุ วิธี การวัด และสภาพแวดล้อม ก่อนแก้สาเหตุและป้องกันซ้ำ",
+    "constraints": "ยืนยันสาเหตุด้วยหลักฐานและข้อตกลง PO ไม่ตัดสินจากอาการเดียว",
+    "related_modules": [
+      "03",
+      "04",
+      "07"
+    ],
+    "source": {
+      "file": "09_Production_Management_Deep_Dive.docx",
+      "sections": [
+        "9.5.1",
+        "9.5.2",
+        "9.5.3"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-10-001",
+    "module": "10",
+    "category": "AI & Technology",
+    "topic": "AI-to-print",
+    "aliases": [
+      "ai สร้างภาพ",
+      "ภาพ ai",
+      "generative ai",
+      "ai พิมพ์",
+      "ลิขสิทธิ์ ai"
+    ],
+    "intents": [
+      "feasibility",
+      "risk_analysis"
+    ],
+    "knowledge": "ภาพจาก AI เป็นวัตถุดิบที่ต้องผ่านการตรวจรายละเอียด ตัวอักษร สี ความละเอียด และสิทธิ์ก่อนส่งผลิต",
+    "constraints": "ตรวจเงื่อนไขสิทธิ์และกฎหมายตามการใช้งานจริง",
+    "related_modules": [
+      "01",
+      "02",
+      "05"
+    ],
+    "source": {
+      "file": "10_AI_and_Technology_Deep_Dive.docx",
+      "sections": [
+        "10.1.1",
+        "10.1.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-10-002",
+    "module": "10",
+    "category": "AI & Technology",
+    "topic": "AI upscaling",
+    "aliases": [
+      "upscale",
+      "upscaling",
+      "ขยายภาพ ai",
+      "เพิ่มพิกเซล",
+      "super resolution"
+    ],
+    "intents": [
+      "myth_busting",
+      "how_to"
+    ],
+    "knowledge": "AI Upscaling เพิ่มจำนวนพิกเซลและสร้างรายละเอียดประมาณขึ้นใหม่ แต่ไม่ได้รับประกันการคืนรายละเอียดต้นฉบับ",
+    "constraints": "ตรวจ artifact และปรู๊ฟที่ขนาดจริง",
+    "related_modules": [
+      "05"
+    ],
+    "source": {
+      "file": "10_AI_and_Technology_Deep_Dive.docx",
+      "sections": [
+        "10.1.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-10-003",
+    "module": "10",
+    "category": "AI & Technology",
+    "topic": "Vector cleanup",
+    "aliases": [
+      "vector",
+      "เวกเตอร์",
+      "auto trace",
+      "tracing",
+      "anchor",
+      "เส้นซ้อน"
+    ],
+    "intents": [
+      "troubleshooting",
+      "how_to"
+    ],
+    "knowledge": "เวกเตอร์จาก Auto-Trace อาจมีเส้นซ้ำ จุดจำนวนมาก หรือโครงสร้างผิด ต้องตรวจ Geometry และความเหมาะสมก่อนผลิต",
+    "constraints": "เส้นเปิดหรือปิดขึ้นกับหน้าที่ของเส้น เช่น cut/crease; ไม่ใช้กฎปิดทุกเส้น",
+    "related_modules": [
+      "05",
+      "06",
+      "07"
+    ],
+    "source": {
+      "file": "10_AI_and_Technology_Deep_Dive.docx",
+      "sections": [
+        "10.2.1",
+        "10.2.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-10-004",
+    "module": "10",
+    "category": "AI & Technology",
+    "topic": "Auto-preflight and nesting",
+    "aliases": [
+      "auto preflight",
+      "auto fix",
+      "hot folder",
+      "nesting",
+      "automation",
+      "ตรวจไฟล์อัตโนมัติ"
+    ],
+    "intents": [
+      "how_to",
+      "risk_analysis"
+    ],
+    "knowledge": "ระบบตรวจไฟล์และจัดวางอัตโนมัติทำงานตามกฎและข้อจำกัดที่ตั้งไว้ การแก้สีหรือโครงสร้างโดยอัตโนมัติต้องได้รับการควบคุม",
+    "constraints": "วัดผลจริงก่อนกล่าวอ้าง ROI; ให้คนอนุมัติการแก้ไขสำคัญ",
+    "related_modules": [
+      "05",
+      "09"
+    ],
+    "source": {
+      "file": "10_AI_and_Technology_Deep_Dive.docx",
+      "sections": [
+        "10.3.1",
+        "10.3.2",
+        "10.5.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-10-005",
+    "module": "10",
+    "category": "AI & Technology",
+    "topic": "Data merge and VDP",
+    "aliases": [
+      "data merge",
+      "vdp",
+      "pdf/vt",
+      "multi sku",
+      "หลายสูตร",
+      "ข้อมูลแปรผัน"
+    ],
+    "intents": [
+      "how_to",
+      "feasibility"
+    ],
+    "knowledge": "Data Merge เชื่อมข้อมูลกลางกับ Master Template และ VDP รองรับข้อมูลเปลี่ยนรายชิ้น",
+    "constraints": "ตรวจข้อความยาวสุด สระวรรณยุกต์ บาร์โค้ด และความถูกต้องข้อมูล",
+    "related_modules": [
+      "01",
+      "05",
+      "08"
+    ],
+    "source": {
+      "file": "10_AI_and_Technology_Deep_Dive.docx",
+      "sections": [
+        "10.3.1",
+        "10.5.1"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  },
+  {
+    "id": "KL-10-006",
+    "module": "10",
+    "category": "AI & Technology",
+    "topic": "Connected print workflow",
+    "aliases": [
+      "dam",
+      "online proofing",
+      "jdf",
+      "xjdf",
+      "erp",
+      "mis",
+      "rfid",
+      "digital link",
+      "workflow"
+    ],
+    "intents": [
+      "comparison",
+      "recommendation"
+    ],
+    "knowledge": "ระบบงานที่เชื่อมกันช่วยลดการคีย์ซ้ำและควบคุมเวอร์ชัน; Smart Packaging เชื่อมข้อมูลสินค้าเข้ากับตัวระบุ เช่น QR หรือ RFID",
+    "constraints": "ตรวจความเข้ากันได้ มาตรฐาน ความปลอดภัย และระบบข้อมูลจริง",
+    "related_modules": [
+      "06",
+      "09"
+    ],
+    "source": {
+      "file": "10_AI_and_Technology_Deep_Dive.docx",
+      "sections": [
+        "10.4.1",
+        "10.4.2"
+      ]
+    },
+    "review_status": "draft_source_summarized",
+    "eligible_for_generation": false
+  }
+]

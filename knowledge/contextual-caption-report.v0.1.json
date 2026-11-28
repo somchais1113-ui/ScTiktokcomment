@@ -1,0 +1,192 @@
+{
+  "phase": "04/05",
+  "tests": [
+    {
+      "name": "all original records remain ineligible",
+      "pass": true
+    },
+    {
+      "name": "draft facts excluded",
+      "pass": true
+    },
+    {
+      "name": "intent-specific wording",
+      "pass": true
+    },
+    {
+      "name": "cross-domain candidate labels",
+      "pass": true
+    },
+    {
+      "name": "unknown no dynamic tags",
+      "pass": true
+    },
+    {
+      "name": "uncertain no dynamic tags",
+      "pass": true
+    },
+    {
+      "name": "empty no tags",
+      "pass": true
+    },
+    {
+      "name": "preserve original Thai question",
+      "pass": true
+    },
+    {
+      "name": "regenerate",
+      "pass": true
+    },
+    {
+      "name": "length short",
+      "pass": true
+    },
+    {
+      "name": "length long",
+      "pass": true
+    },
+    {
+      "name": "tone professional",
+      "pass": true
+    },
+    {
+      "name": "tone hook",
+      "pass": true
+    },
+    {
+      "name": "tag normalization",
+      "pass": true
+    },
+    {
+      "name": "multi dedup",
+      "pass": true
+    },
+    {
+      "name": "CTA once",
+      "pass": true
+    },
+    {
+      "name": "related not direct evidence",
+      "pass": true
+    },
+    {
+      "name": "approved fact and caveat in short",
+      "pass": true
+    },
+    {
+      "name": "approval flag both required",
+      "pass": true
+    },
+    {
+      "name": "missing provenance blocked",
+      "pass": true
+    },
+    {
+      "name": "missing caveat blocked",
+      "pass": true
+    },
+    {
+      "name": "mixed questions maintain independent grounding",
+      "pass": true
+    },
+    {
+      "name": "unapproved primary blocks approved secondary",
+      "pass": true
+    },
+    {
+      "name": "review always required",
+      "pass": true
+    }
+  ],
+  "passed": 24,
+  "actual_corpus_approved": 0,
+  "examples": [
+    {
+      "question": "Pantone C กับ U ต่างกันยังไง",
+      "body": "Pantone C กับ U ต่างกันยังไง\n\nชวนดูความแตกต่างในเรื่องPantone และสีพิเศษก่อนตัดสินใจ\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#Pantone #SpotColor #ColorManagement #ระบบสี #SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [
+        "KL-02-003"
+      ],
+      "intent": "comparison"
+    },
+    {
+      "question": "CMYK คืออะไร",
+      "body": "CMYK คืออะไร\n\nมาทำความรู้จักระบบสีและขอบเขตสีกันครับ\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#RGB #CMYK #ColorManagement #ระบบสี #SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [
+        "KL-02-001"
+      ],
+      "intent": "definition"
+    },
+    {
+      "question": "ทำไม CMYK สีเพี้ยน",
+      "body": "ทำไม CMYK สีเพี้ยน\n\nชวนไล่ดูสาเหตุที่เป็นไปได้ในเรื่องระบบสีและขอบเขตสี โดยยังไม่ด่วนสรุปจากอาการเดียว\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#RGB #CMYK #ColorManagement #ระบบสี #SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [
+        "KL-02-001"
+      ],
+      "intent": "troubleshooting"
+    },
+    {
+      "question": "ผสมสีดำยังไงให้ดำสนิท",
+      "body": "ผสมสีดำยังไงให้ดำสนิท\n\nชวนดูขั้นตอนและสิ่งที่ควรตรวจในเรื่องการผสมสีดำและปริมาณหมึก\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#RichBlack #CMYK #ColorManagement #ระบบสี #SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [
+        "KL-02-002"
+      ],
+      "intent": "how_to"
+    },
+    {
+      "question": "ทำไมกล่องเคลือบด้านแล้วลิ้นกาวหลุด",
+      "body": "ทำไมกล่องเคลือบด้านแล้วลิ้นกาวหลุด\n\nชวนไล่ดูสาเหตุที่เป็นไปได้ในเรื่องกาวและพื้นผิว / ฟิล์มเคลือบ / โครงสร้างแบบคลี่ โดยยังไม่ด่วนสรุปจากอาการเดียว\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#Adhesive #SurfaceEnergy #MaterialScience #วัสดุ #Lamination #PrintFinishing #เทคนิคงานพิมพ์ #Dieline #PackagingDesign #บรรจุภัณฑ์ #SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [
+        "KL-04-004",
+        "KL-07-001",
+        "KL-06-003"
+      ],
+      "intent": "troubleshooting"
+    },
+    {
+      "question": "ทำไมตั้ง 300 DPI แล้วภาพแตก",
+      "body": "ทำไมตั้ง 300 DPI แล้วภาพแตก\n\nชวนไล่ดูสาเหตุที่เป็นไปได้ในเรื่องความละเอียดที่ขนาดใช้งาน โดยยังไม่ด่วนสรุปจากอาการเดียว\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#DPI #PPI #Prepress #เตรียมไฟล์งานพิมพ์ #SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [
+        "KL-05-006"
+      ],
+      "intent": "troubleshooting"
+    },
+    {
+      "question": "วันนี้กินอะไรดี",
+      "body": "วันนี้กินอะไรดี\n\nชวนคุยจากคำถามนี้ โดยยังไม่สรุปคำตอบจนกว่าจะมีข้อมูลเพียงพอ\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [],
+      "intent": "unknown"
+    },
+    {
+      "question": "กาว",
+      "body": "กาว\n\nชวนคุยจากคำถามนี้ โดยยังไม่สรุปคำตอบจนกว่าจะมีข้อมูลเพียงพอ\n\nมีคำถามเพิ่มเติม คอมเมนต์ถามกันได้ครับ",
+      "tags": "#SCWork #ถามมาตอบไป",
+      "status": "teaser_only",
+      "topics": [],
+      "intent": "unknown"
+    }
+  ],
+  "test_environment": "JavaScript execution with actual corpus and synthetic approval fixtures; not independent benchmark or browser",
+  "runtime_integration": false,
+  "limitations": [
+    "Phase 04 minimal direct-topic ranking only; related modules not searched for facts",
+    "Current corpus only produces question-led teasers; technical facts remain blocked",
+    "Topic labels and hashtags are editorial metadata, not technical claims",
+    "No semantic model or AI API",
+    "Synthetic approval test never alters corpus"
+  ]
+}

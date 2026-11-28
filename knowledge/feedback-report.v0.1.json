@@ -1,0 +1,151 @@
+{
+  "phase": "06",
+  "test_environment": "JavaScript function execution; in-memory storage, actual corpus, synthetic feedback",
+  "checks": [
+    {
+      "name": "approve",
+      "pass": true
+    },
+    {
+      "name": "persistence",
+      "pass": true
+    },
+    {
+      "name": "exact retrieval",
+      "pass": true
+    },
+    {
+      "name": "similar retrieval",
+      "pass": true
+    },
+    {
+      "name": "different intent blocked",
+      "pass": true
+    },
+    {
+      "name": "different topic blocked",
+      "pass": true
+    },
+    {
+      "name": "unknown blocked",
+      "pass": true
+    },
+    {
+      "name": "different context blocked",
+      "pass": true
+    },
+    {
+      "name": "duplicate upsert",
+      "pass": true
+    },
+    {
+      "name": "correction retains original",
+      "pass": true
+    },
+    {
+      "name": "superseded original rejected",
+      "pass": true
+    },
+    {
+      "name": "rejected not retrieved",
+      "pass": true
+    },
+    {
+      "name": "reject",
+      "pass": true
+    },
+    {
+      "name": "explicit reapproval",
+      "pass": true
+    },
+    {
+      "name": "invalid correction blocked",
+      "pass": true
+    },
+    {
+      "name": "learning opt-in",
+      "pass": true
+    },
+    {
+      "name": "learned style used",
+      "pass": true
+    },
+    {
+      "name": "no feedback fact or tags injection",
+      "pass": true
+    },
+    {
+      "name": "explicit preset takes precedence",
+      "pass": true
+    },
+    {
+      "name": "multi-question no automatic style",
+      "pass": true
+    },
+    {
+      "name": "import pending except rejected",
+      "pass": true
+    },
+    {
+      "name": "duplicate import preserves local",
+      "pass": true
+    },
+    {
+      "name": "local review unlocks imported example",
+      "pass": true
+    },
+    {
+      "name": "import cannot override local rejection",
+      "pass": true
+    },
+    {
+      "name": "invalid import atomic",
+      "pass": true
+    },
+    {
+      "name": "invalid style blocked",
+      "pass": true
+    },
+    {
+      "name": "delete",
+      "pass": true
+    },
+    {
+      "name": "storage error surfaced",
+      "pass": true
+    },
+    {
+      "name": "corrupt store not silently overwritten",
+      "pass": true
+    },
+    {
+      "name": "corrupt feedback falls back",
+      "pass": true
+    },
+    {
+      "name": "review guard retained",
+      "pass": true
+    }
+  ],
+  "examples": {
+    "before": "Pantone C กับ U ต่างกันยังไง\n\nชวนดูความแตกต่างในเรื่องPantone และสีพิเศษก่อนตัดสินใจ",
+    "after_style": "เรื่องนี้ต้องดูให้ชัด: Pantone C กับ U ต่างกันยังไง",
+    "similar_matches": [
+      {
+        "id": "F2",
+        "score": 0.884,
+        "review_only": true
+      }
+    ],
+    "applied_style": {
+      "tone": "hook",
+      "length": "short",
+      "variant": 1
+    }
+  },
+  "passed": 31,
+  "independent_benchmark": false,
+  "runtime_integration": false,
+  "real_feedback_records": 0,
+  "technical_approvals": 0
+}
