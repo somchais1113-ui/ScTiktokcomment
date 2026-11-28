@@ -34,5 +34,14 @@
     "urls": [
       "https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/resize-adjust-resolution/image-size-resolution-and-resampling.html"
     ]
+  },
+  "KL-05-001": {
+    "knowledge": "ตัดตก (Bleed) คือการขยายภาพหรือสีพื้นออกนอกเส้นตัด เพื่อชดเชยความคลาดเคลื่อนเล็กน้อยระหว่างผลิตและตัด",
+    "constraints": "ขยาย Artwork จริงไปจนถึงขอบ Bleed และใช้ระยะตามสเปกผู้ผลิต ไม่ใช้ค่าระยะเดียวกับทุกงาน",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/desktop/save-and-export/export-files-to-different-formats/add-printers-marks-and-bleeds.html",
+      "https://helpx.adobe.com/uk/indesign/desktop/print/page-set-up-and-printer-marks/print-bleed-and-slug-areas.html",
+      "https://helpx.adobe.com/illustrator/desktop/save-and-export/export-files-to-different-formats/pdf-marks-bleeds-and-color-output-options.html"
+    ]
   }
 }

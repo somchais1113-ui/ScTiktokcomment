@@ -1,5 +1,5 @@
 // Phase 05 experimental caption composer. No browser runtime integration.
-export function createCaptionEngine(retrieval){
+export function createCaptionEngine(retrieval,narrative=null){
  const clean=v=>String(v??"").trim();
  const normalizeTags=v=>{const seen=new Set();return clean(v).split(/[\s,]+/u).map(t=>t.replace(/^#+/u,"")).filter(t=>/^[\p{L}\p{M}\p{N}_]+$/u.test(t)).filter(t=>{const k=t.normalize("NFC").toLowerCase();if(seen.has(k))return false;seen.add(k);return true}).map(t=>"#"+t).join(" ")};
  const domainTags={"01":"#GraphicDesign #งานออกแบบ","02":"#ColorManagement #ระบบสี","03":"#PrintingTechnology #งานพิมพ์","04":"#MaterialScience #วัสดุ","05":"#Prepress #เตรียมไฟล์งานพิมพ์","06":"#PackagingDesign #บรรจุภัณฑ์","07":"#PrintFinishing #เทคนิคงานพิมพ์","08":"#Branding #สร้างแบรนด์","09":"#ProductionManagement #การผลิต","10":"#DesignTechnology #Automation"};
@@ -36,8 +36,10 @@ export function createCaptionEngine(retrieval){
    const parts=[hook];
    if(status==="approved_available"){
     // Keep the caveat even in short mode. Never add an unapproved secondary record.
+    const composed=narrative?.(eligible[0],{question,normalized:analysis.normalized,intent:analysis.intent.primary,length,tone,variant});
+    if(composed){parts.splice(0,parts.length,...composed);sources.push({question,id:eligible[0].id,source:eligible[0].source})}else{
     const selected=eligible.slice(0,length==="long"?2:1);
-    for(const r of selected){parts.push(r.knowledge+"\nข้อควรพิจารณา: "+r.constraints);sources.push({question,id:r.id,source:r.source})}
+    for(const r of selected){parts.push(r.knowledge+"\nข้อควรพิจารณา: "+r.constraints);sources.push({question,id:r.id,source:r.source})}}
    }else if(length!=="short"&&status==="pending_review"){
     const labels=[...new Set(candidates.slice(0,3).map(c=>focus[c.id]||c.topic))].join(" / ");
     const phrases=framing[analysis.intent.primary]||framing.unknown;
