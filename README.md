@@ -1,3 +1,10 @@
+# V2.2.5 — Narrative Regression Protection
+
+- Restore Narrative Long as initial default and migrate legacy local preset once, preserving CTA, tags, tone and template. Explicit saved v5 selections remain available.
+- Expand colloquial DPI aliases and matching scope in source and bundled runtime. Retain 15 reviewed packs and conservative scope guard (HEX and generic Pantone remain unreviewed).
+- Show active Narrative version/depth and version caption assets/PWA cache. V2.2.4 hashtag and iPhone editor changes retained.
+- Runtime validation: 18 grounded questions (15 packs + 3 conversational cases), 4 scope guards, 2 preset migration cases; JS syntax checked. Physical Safari and production browser not tested.
+
 # V2.2.4 — TikTok Hashtag Guard & iPhone Stability
 
 - All publish-ready caption output is limited to five unique hashtags, always beginning with #scwork #กราฟฟิค. Topic-specific tags retain priority; existing presets and manual edits are normalized at preview/copy. Inline tags are consolidated in the publish preview. Copy caption and Copy all include mandatory tags.
