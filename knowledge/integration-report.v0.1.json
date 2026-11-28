@@ -1,0 +1,321 @@
+{
+  "phase": "07",
+  "benchmark": {
+    "kind": "new author-written challenge set, not independent human benchmark; no recognition tuning against this set",
+    "count": 20,
+    "top1": 20,
+    "top3": 20,
+    "intent": 16,
+    "results": [
+      {
+        "q": "พี่ครับ แพนทอนซี ยู มันต่างกันตรงกระดาษใช่ปะ",
+        "expected_topic": "KL-02-003",
+        "actual_topic": "KL-02-003",
+        "expected_intent": "comparison",
+        "actual_intent": "comparison",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "พอขยายรูปจาก A4 เป็นโปสเตอร์แล้วไม่คม เกิดจากอะไรครับ",
+        "expected_topic": "KL-05-006",
+        "actual_topic": "KL-05-006",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "why",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": false
+      },
+      {
+        "q": "สีขาวหายจากงานหลังเปิดโอเวอร์ปริ้นท์ ทำไงดี",
+        "expected_topic": "KL-05-003",
+        "actual_topic": "KL-05-003",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "how_to",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": false
+      },
+      {
+        "q": "ทำไมดำสี่สีถึงใช้แทนหมึกดำ 100 ไม่ได้ทุกงาน",
+        "expected_topic": "KL-02-002",
+        "actual_topic": "KL-02-002",
+        "expected_intent": "why",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": false
+      },
+      {
+        "q": "ไฟล์ rgb เอาไปพิมพ์แล้วสีไม่เหมือนหน้าจอเพราะอะไร",
+        "expected_topic": "KL-02-001",
+        "actual_topic": "KL-02-001",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ฟิล์มด้านทำไมเป็นรอยขีดข่วนง่าย",
+        "expected_topic": "KL-07-001",
+        "actual_topic": "KL-07-001",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "สติ๊กเกอร์ไม่ติดขวดบีบ เกิดจากอะไร",
+        "expected_topic": "KL-04-004",
+        "actual_topic": "KL-04-004",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "อยากลดเศษวัสดุโดยใช้ไดคัทเดิม ทำยังไง",
+        "expected_topic": "KL-09-003",
+        "actual_topic": "KL-09-003",
+        "expected_intent": "how_to",
+        "actual_intent": "how_to",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ค่าเอคิวแอลหมายถึงอะไร",
+        "expected_topic": "KL-09-001",
+        "actual_topic": "KL-09-001",
+        "expected_intent": "definition",
+        "actual_intent": "definition",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "กล่องใส่สินค้าไม่ได้ ทั้งที่วัดขนาดแล้ว ทำไม",
+        "expected_topic": "KL-06-002",
+        "actual_topic": "KL-06-002",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "งานพิมพ์ดิจิตอลกับออฟเซต แบบไหนคุ้ม",
+        "expected_topic": "KL-03-001",
+        "actual_topic": "KL-03-001",
+        "expected_intent": "cost_analysis",
+        "actual_intent": "cost_analysis",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ฟอนต์ไทยทำไมไม้โทลอยตอน export",
+        "expected_topic": "KL-01-001",
+        "actual_topic": "KL-01-001",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "why",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": false
+      },
+      {
+        "q": "คู่มือแบรนด์กับโลโก้ต่างกันยังไง",
+        "expected_topic": "KL-08-005",
+        "actual_topic": "KL-08-005",
+        "expected_intent": "comparison",
+        "actual_intent": "comparison",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "อาร์เอฟไอดีกับคิวอาร์โค้ดต่างกันยังไง",
+        "expected_topic": "KL-10-006",
+        "actual_topic": "KL-10-006",
+        "expected_intent": "comparison",
+        "actual_intent": "comparison",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "วันนี้ฝนจะตกไหม",
+        "expected_topic": null,
+        "actual_topic": null,
+        "expected_intent": "unknown",
+        "actual_intent": "unknown",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "กาว",
+        "expected_topic": null,
+        "actual_topic": null,
+        "expected_intent": "unknown",
+        "actual_intent": "unknown",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "",
+        "expected_topic": null,
+        "actual_topic": null,
+        "expected_intent": "unknown",
+        "actual_intent": "unknown",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ทำไมหมึกไม่เกาะพลาสติกแล้วหลุด",
+        "expected_topic": "KL-04-004",
+        "actual_topic": "KL-04-004",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ขอวิธีทำดาต้าเมิร์จสำหรับหลายสูตร",
+        "expected_topic": "KL-10-005",
+        "actual_topic": "KL-10-005",
+        "expected_intent": "how_to",
+        "actual_intent": "how_to",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      },
+      {
+        "q": "ฟอยล์ทองมีช่องไฟตันเพราะอะไร",
+        "expected_topic": "KL-07-003",
+        "actual_topic": "KL-07-003",
+        "expected_intent": "troubleshooting",
+        "actual_intent": "troubleshooting",
+        "top3": true,
+        "topic_pass": true,
+        "intent_pass": true
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "five reviewed records",
+      "pass": true
+    },
+    {
+      "name": "grounded scoped fact",
+      "pass": true
+    },
+    {
+      "name": "pending blocked",
+      "pass": true
+    },
+    {
+      "name": "unknown blocked",
+      "pass": true
+    },
+    {
+      "name": "multi mixed",
+      "pass": true
+    },
+    {
+      "name": "header preserved",
+      "pass": true
+    },
+    {
+      "name": "script order",
+      "pass": true
+    },
+    {
+      "name": "old preset migrated",
+      "pass": true
+    },
+    {
+      "name": "controller generation",
+      "pass": true
+    },
+    {
+      "name": "feedback single",
+      "pass": true
+    },
+    {
+      "name": "correct enabled",
+      "pass": true
+    },
+    {
+      "name": "correction recorded",
+      "pass": true
+    },
+    {
+      "name": "manual edit preserved",
+      "pass": true
+    },
+    {
+      "name": "copy manual",
+      "pass": true
+    },
+    {
+      "name": "mismatched training blocked",
+      "pass": true
+    },
+    {
+      "name": "new source generation",
+      "pass": true
+    },
+    {
+      "name": "draft restored with training guard",
+      "pass": true
+    },
+    {
+      "name": "explicit regen uses displayed question",
+      "pass": true
+    },
+    {
+      "name": "explicit canvas source",
+      "pass": true
+    },
+    {
+      "name": "multi feedback blocked",
+      "pass": true
+    },
+    {
+      "name": "legacy preset",
+      "pass": true
+    },
+    {
+      "name": "legacy smart",
+      "pass": true
+    },
+    {
+      "name": "preset saved",
+      "pass": true
+    },
+    {
+      "name": "cache bumped",
+      "pass": true
+    }
+  ],
+  "approved_records": [
+    "KL-02-001",
+    "KL-02-002",
+    "KL-02-003",
+    "KL-05-003",
+    "KL-05-006"
+  ],
+  "pending": 55,
+  "environment": "JavaScript execution with simulated DOM, clipboard and storage; no real browser or Safari",
+  "runtime_integration": true,
+  "release": "candidate"
+}

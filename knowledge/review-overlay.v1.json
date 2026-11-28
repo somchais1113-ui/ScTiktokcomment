@@ -1,0 +1,38 @@
+{
+  "KL-02-001": {
+    "knowledge": "RGB สร้างสีด้วยแสง ส่วน CMYK ใช้หมึกดูดกลืนแสง สีบางเฉดที่เห็นบนจอจึงอาจพิมพ์ซ้ำไม่ได้",
+    "constraints": "ใช้โปรไฟล์สีที่เหมาะกับอุปกรณ์และตรวจปรู๊ฟตามเงื่อนไขผลิตจริง",
+    "urls": [
+      "https://helpx.adobe.com/creative-cloud/apps/colors/understand-color-modes.html"
+    ]
+  },
+  "KL-02-002": {
+    "knowledge": "สีดำ K100 อาจยังเห็นสีพื้นด้านล่างเมื่อพิมพ์ทับ การเติมหมึก CMY ใน Rich Black ช่วยเพิ่มความทึบของพื้นที่ดำได้",
+    "constraints": "ให้โรงพิมพ์กำหนดสัดส่วนหมึกที่เหมาะกับระบบพิมพ์ ไม่ใช้สูตรเดียวกับทุกงาน",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/desktop/manage-colors/apply-transparency-and-blending/set-up-and-manage-overprinting.html"
+    ]
+  },
+  "KL-02-003": {
+    "knowledge": "Pantone C และ U เป็นตัวอย่างสีบนกระดาษเคลือบและไม่เคลือบผิว แม้รหัสสีเดียวกัน ลักษณะการดูดซึมหมึกของกระดาษก็ทำให้สีที่เห็นต่างกันได้",
+    "constraints": "เทียบตัวอย่างสีและวัสดุจริงก่อนผลิต ไม่รับประกันสีจากภาพบนหน้าจอ",
+    "urls": [
+      "https://support.pantone.com/en/what-does-the-terms-coated-and-uncoated-mean-in-the-pantone-graphics-system"
+    ]
+  },
+  "KL-05-003": {
+    "knowledge": "Overprint คงหมึกด้านล่างไว้ ส่วน Knockout เว้นพื้นที่ด้านล่าง วัตถุสีขาว CMYK ที่ตั้ง Overprint อาจหายเมื่อออกงาน",
+    "constraints": "ตรวจ Overprint Preview และ Separation แยกจากกรณีใช้หมึกขาว Spot White จริง",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/desktop/manage-colors/apply-transparency-and-blending/white-overprint.html",
+      "https://helpx.adobe.com/illustrator/desktop/manage-colors/apply-transparency-and-blending/set-up-and-manage-overprinting.html"
+    ]
+  },
+  "KL-05-006": {
+    "knowledge": "ความละเอียดที่ขนาดพิมพ์จริงขึ้นกับจำนวนพิกเซลและขนาดวางภาพ เมื่อขยายภาพโดยไม่เพิ่มพิกเซล ค่า PPI จะลดลง",
+    "constraints": "ตรวจภาพที่ขนาดใช้งานจริงและเลือกระดับความละเอียดให้เหมาะกับอุปกรณ์ปลายทาง",
+    "urls": [
+      "https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/resize-adjust-resolution/image-size-resolution-and-resampling.html"
+    ]
+  }
+}
