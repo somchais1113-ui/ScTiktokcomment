@@ -1,0 +1,64 @@
+{
+  "phase": "02",
+  "version": "0.1.0-draft",
+  "source_document_count": 11,
+  "reported_pages": 116,
+  "local_staging_records": 740,
+  "curated_record_count": 60,
+  "modules": [
+    {
+      "id": "01",
+      "category": "Graphic Design",
+      "records": 6
+    },
+    {
+      "id": "02",
+      "category": "Color Management",
+      "records": 6
+    },
+    {
+      "id": "03",
+      "category": "Printing Technology",
+      "records": 6
+    },
+    {
+      "id": "04",
+      "category": "Material Science",
+      "records": 6
+    },
+    {
+      "id": "05",
+      "category": "Prepress & Artwork",
+      "records": 6
+    },
+    {
+      "id": "06",
+      "category": "Packaging Design",
+      "records": 6
+    },
+    {
+      "id": "07",
+      "category": "Special Finishing",
+      "records": 6
+    },
+    {
+      "id": "08",
+      "category": "Branding & Marketing",
+      "records": 6
+    },
+    {
+      "id": "09",
+      "category": "Production Management",
+      "records": 6
+    },
+    {
+      "id": "10",
+      "category": "AI & Technology",
+      "records": 6
+    }
+  ],
+  "master_source": "Knowledge_Library_Design_Printing_Packaging.docx",
+  "source_policy": "Public repository contains only concise derived records, not full uploaded documents or extracted text. Master used as taxonomy reference; detailed section locators refer to the respective deep-dive files.",
+  "external_validation": "pending",
+  "runtime_integration": false
+}
