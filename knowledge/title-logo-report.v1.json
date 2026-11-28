@@ -1,0 +1,25 @@
+{
+  "version": "2.2.3",
+  "logo": {
+    "file": "scwork-go-logo.png",
+    "original_git_blob": "23bb219db395d9cce71bcc35d7971aea04dd1285",
+    "width": 1672,
+    "height": 941,
+    "alpha": true
+  },
+  "checks": [
+    "create QA",
+    "replace same title",
+    "original comment and custom logo preserved",
+    "anchored width ratio",
+    "project self contained",
+    "free transform preserved",
+    "no duplicate or undo on same logo",
+    "locked title guarded",
+    "cache reused",
+    "undo picker state",
+    "create when absent and switch multi"
+  ],
+  "environment": "Isolated JavaScript logic with simulated DOM/storage and image loading; full browser/mobile and PNG export not run",
+  "notes": "Factory Q&A and Caption engine unchanged. Go PNG bytes identical to user upload; loaded on demand as embedded data URL for portable projects. Existing title is replaced in place; custom logos remain. PWA cache includes new PNG."
+}
