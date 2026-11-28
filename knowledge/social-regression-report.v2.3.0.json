@@ -246,5 +246,7 @@
     }
   ],
   "browser_tested": false,
-  "x_counter": "conservative estimate, not official twitter-text"
+  "x_counter": "conservative estimate, not official twitter-text",
+  "mock_dom_controller_checks": 12,
+  "mock_dom_controller_status": "passed (not real browser)"
 }
