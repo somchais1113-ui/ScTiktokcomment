@@ -1,0 +1,98 @@
+{
+  "version": "2.2.5",
+  "tested": [
+    {
+      "q": "ทำไมต้องเผื่อตัดตก?",
+      "id": "KL-05-001",
+      "chars": 1097
+    },
+    {
+      "q": "RGB CMYK ต่างกันยังไง",
+      "id": "KL-02-001",
+      "chars": 765
+    },
+    {
+      "q": "Rich Black คืออะไร",
+      "id": "KL-02-002",
+      "chars": 779
+    },
+    {
+      "q": "Pantone C กับ U ต่างกันยังไง",
+      "id": "KL-02-003",
+      "chars": 712
+    },
+    {
+      "q": "Overprint กับ Knockout ต่างกันยังไง",
+      "id": "KL-05-003",
+      "chars": 820
+    },
+    {
+      "q": "DPI กับ Effective PPI ต่างกันยังไง",
+      "id": "KL-05-006",
+      "chars": 847
+    },
+    {
+      "q": "Kerning กับ Tracking ต่างกันยังไง",
+      "id": "KL-01-002",
+      "chars": 770
+    },
+    {
+      "q": "ICC Profile กับ Proofing คืออะไร",
+      "id": "KL-02-004",
+      "chars": 826
+    },
+    {
+      "q": "Metamerism คืออะไร",
+      "id": "KL-02-006",
+      "chars": 895
+    },
+    {
+      "q": "Offset กับ Digital เลือกแบบไหนดี?",
+      "id": "KL-03-001",
+      "chars": 904
+    },
+    {
+      "q": "GSM กับความหนากระดาษต่างกันยังไง",
+      "id": "KL-04-001",
+      "chars": 726
+    },
+    {
+      "q": "Trapping กับ Registration คืออะไร",
+      "id": "KL-05-002",
+      "chars": 838
+    },
+    {
+      "q": "PDF/X-1a กับ PDF/X-4 ต่างกันยังไง",
+      "id": "KL-05-004",
+      "chars": 896
+    },
+    {
+      "q": "Auto Trace กับ Vector คืออะไร",
+      "id": "KL-10-003",
+      "chars": 831
+    },
+    {
+      "q": "Data Merge กับ Multi-SKU ทำยังไง",
+      "id": "KL-10-005",
+      "chars": 853
+    },
+    {
+      "q": "ทำไมตั้งค่า 300 แล้วภาพยังแตก?",
+      "id": "KL-05-006",
+      "chars": 847
+    },
+    {
+      "q": "ทำไมภาพมันแตก",
+      "id": "KL-05-006",
+      "chars": 847
+    },
+    {
+      "q": "ทำไมสีบนจอไม่ตรงกับงานพิมพ์?",
+      "id": "KL-02-001",
+      "chars": 765
+    }
+  ],
+  "scope_guard_cases": 4,
+  "preset_migration_cases": 2,
+  "browser_tested": false
+}
