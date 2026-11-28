@@ -34,5 +34,86 @@
     "urls": [
       "https://helpx.adobe.com/photoshop/desktop/crop-resize-transform/resize-adjust-resolution/image-size-resolution-and-resampling.html"
     ]
+  },
+  "KL-05-001": {
+    "knowledge": "ตัดตก (Bleed) คือการขยายภาพหรือสีพื้นออกนอกเส้นตัด เพื่อชดเชยความคลาดเคลื่อนเล็กน้อยระหว่างผลิตและตัด",
+    "constraints": "ขยาย Artwork จริงไปจนถึงขอบ Bleed และใช้ระยะตามสเปกผู้ผลิต ไม่ใช้ค่าระยะเดียวกับทุกงาน",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/desktop/save-and-export/export-files-to-different-formats/add-printers-marks-and-bleeds.html",
+      "https://helpx.adobe.com/uk/indesign/desktop/print/page-set-up-and-printer-marks/print-bleed-and-slug-areas.html",
+      "https://helpx.adobe.com/illustrator/desktop/save-and-export/export-files-to-different-formats/pdf-marks-bleeds-and-color-output-options.html"
+    ]
+  },
+  "KL-01-002": {
+    "knowledge": "Kerning คือการปรับช่องไฟระหว่างตัวอักษรเป็นรายคู่ ส่วน Tracking คือการปรับระยะของตัวอักษรในกลุ่มข้อความ ส่วนระยะระหว่างบรรทัดเรียกว่า Leading",
+    "constraints": "ไม่ควรนำค่าช่องไฟของฟอนต์หนึ่งไปใช้กับทุกฟอนต์โดยอัตโนมัติ โดยเฉพาะข้อความไทยที่มีสระและวรรณยุกต์",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/desktop/design-with-text/edit-format-text/adjust-line-and-character-spacing.html"
+    ]
+  },
+  "KL-02-004": {
+    "knowledge": "ICC Profile เป็นข้อมูลที่อธิบายลักษณะการสร้างหรือแสดงสีของอุปกรณ์และเงื่อนไขการพิมพ์ ช่วยให้ระบบจัดการสีแปลงค่าสีระหว่างอุปกรณ์ได้เหมาะสม",
+    "constraints": "Soft Proof เป็นการจำลอง ไม่ใช่การรับประกันว่าสีจริงจะตรงทุกเฉด หากโปรไฟล์หรือสภาพจอไม่เหมาะสม ผลจำลองก็คลาดเคลื่อนได้",
+    "urls": [
+      "https://helpx.adobe.com/si/photoshop/using/proofing-colors.html",
+      "https://helpx.adobe.com/photoshop/desktop/print/print-with-color-management.html",
+      "https://helpx.adobe.com/photoshop/desktop/print/print-a-hard-proof.html"
+    ]
+  },
+  "KL-02-006": {
+    "knowledge": "ถ้าสีสองตัวอย่างดูตรงกันภายใต้แสงแบบหนึ่ง แต่ดูต่างกันเมื่อเปลี่ยนแสง ปรากฏการณ์นี้เรียกว่า Metamerism",
+    "constraints": "อย่าตัดสินจากภาพถ่ายมือถือหรือแสงห้องเพียงครั้งเดียว และอย่าเรียกการเปลี่ยนสีของชิ้นเดียวทุกกรณีว่า Metamerism เพราะหลักการนี้เกี่ยวกับการเปรียบเทียบตัวอย่างคู่กัน",
+    "urls": [
+      "https://www.xrite.com/blog/the-science-behind-visual-evaluation",
+      "https://www.xrite.com/en/service-support/understanding_illuminants"
+    ]
+  },
+  "KL-03-001": {
+    "knowledge": "Offset แบบดั้งเดิมถ่ายโอนหมึกจากเพลทผ่านผ้ายางลงบนวัสดุ ส่วน Digital Printing สามารถสร้างภาพจากข้อมูลดิจิทัลโดยไม่ต้องทำเพลทเฉพาะ Artwork แต่ละแบบเหมือน Offset ทั่วไป",
+    "constraints": "ไม่มีจำนวนชิ้นตายตัวที่บอกว่า Offset หรือ Digital คุ้มกว่าทุกงาน ต้องดูเครื่องจักร ความพร้อมของวัสดุ คุณภาพและเวลาร่วมกัน",
+    "urls": [
+      "https://www.hp.com/us-en/tech-takes/printing/explainer/hp-indigo-press-overview.html",
+      "https://workflowhelp.kodak.com/plugins/viewsource/viewpagesrc.action?pageId=263722449"
+    ]
+  },
+  "KL-04-001": {
+    "knowledge": "GSM หรือแกรมต่อตารางเมตร บอกมวลของกระดาษต่อพื้นที่ ไม่ได้บอกความหนาโดยตรง ความหนาจริงเรียกว่า Caliper",
+    "constraints": "อย่าใช้ตัวเลขแกรมเพียงค่าเดียวรับประกันความหนาหรือความแข็งแรงของกล่อง ควรระบุเกรดวัสดุและเกณฑ์ตรวจรับที่ตกลงกันด้วย",
+    "urls": [
+      "https://www.paperdimensionsllc.com/resources/paper-caliper-thickness",
+      "https://www.paperindex.com/academy/how-offset-paper-caliper-consistency-affects-folding-trimming-and-handling-of-printed-packaging-inserts/"
+    ]
+  },
+  "KL-05-002": {
+    "knowledge": "Trapping คือการสร้างพื้นที่ซ้อนเหลื่อมเล็กน้อยระหว่างสีที่อยู่ติดกัน เพื่อช่วยลดโอกาสเกิดช่องว่างเมื่อการลงทะเบียนสีคลาดเคลื่อน",
+    "constraints": "ไม่ควรเพิ่มเส้นซ้อนหรือใช้ค่า Trap เดียวกับทุกงาน เพราะอาจเปลี่ยนลักษณะขอบสีและรายละเอียดได้ และ Trapping ไม่ได้ทดแทนการควบคุม Registration ของเครื่องพิมพ์",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/using/trapping.html",
+      "https://helpx.adobe.com/acrobat/using/trapping-color-acrobat-pro.html"
+    ]
+  },
+  "KL-05-004": {
+    "knowledge": "PDF/X-1a เป็นรูปแบบสำหรับงานพิมพ์ที่ต้องจัดการความโปร่งใสให้เรียบร้อยก่อนส่งออก ส่วน PDF/X-4 รองรับการเก็บ Live Transparency ไว้สำหรับ Workflow ที่รองรับ",
+    "constraints": "อย่าเลือก PDF/X-4 เพียงเพราะเป็นรูปแบบใหม่กว่า หรือคิดว่า PDF/X ทำให้ทุกไฟล์พร้อมพิมพ์โดยอัตโนมัติ ต้องให้ตรงกับ Workflow จริง",
+    "urls": [
+      "https://helpx.adobe.com/th_th/illustrator/desktop/save-and-export/export-files-to-different-formats/adobe-pdf-presets.html",
+      "https://helpx.adobe.com/illustrator/desktop/save-and-export/export-files-to-different-formats/pdf-x-standards-compatibility-general-options.html"
+    ]
+  },
+  "KL-10-003": {
+    "knowledge": "Auto Trace เปลี่ยนภาพ Raster ให้เป็นเส้นเวกเตอร์ตามข้อมูลภาพ แต่ผลลัพธ์ยังต้องตรวจและปรับ Geometry ก่อนใช้เป็นเส้นเทคนิคสำหรับผลิต",
+    "constraints": "ไม่ควรใช้ Simplify จนรูปทรงผิดจากต้นฉบับ และไม่ควรบังคับให้ทุกเส้นปิด เพราะเส้นเทคนิคแต่ละชนิดมีหน้าที่ต่างกัน",
+    "urls": [
+      "https://helpx.adobe.com/illustrator/desktop/manage-objects/traces-mockups-symbols/edit-image-trace-results.html",
+      "https://helpx.adobe.com/illustrator/desktop/manage-objects/traces-mockups-symbols/image-trace-presets.html"
+    ]
+  },
+  "KL-10-005": {
+    "knowledge": "Data Merge คือการนำข้อมูลจากตาราง เช่น CSV หรือ TXT มาเชื่อมกับช่องข้อมูลใน Master Template เพื่อสร้างงานหลายเวอร์ชันจาก Layout เดียว",
+    "constraints": "ระบบช่วยลดการแก้ซ้ำ แต่ไม่ตรวจแทนคนทุกเรื่อง ต้องตรวจข้อความล้นกรอบ ความถูกต้องของข้อมูล และบาร์โค้ดบนผลลัพธ์ตามข้อกำหนดของงาน",
+    "urls": [
+      "https://helpx.adobe.com/indesign/desktop/automation-and-scripting/merge-data/data-merging-overview.html",
+      "https://helpx.adobe.com/sg/indesign/desktop/automation-and-scripting/merge-data/preview-records-in-the-target-document.html"
+    ]
   }
 }
