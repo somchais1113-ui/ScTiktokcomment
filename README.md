@@ -1,3 +1,10 @@
+# V2.2.6 — Phone Default Workspace
+
+- Phone workspace defaults to a 30% preview / approximately 70% tools split (excluding splitter thickness), matching the supplied iPhone reference. The existing draggable separator and Fit behaviour remain intact.
+- A new phone-only preference key applies the new default once for existing phone users; later adjustments are remembered. Double-click restores the device default. Tablet and desktop layout and tablet preferences are unchanged.
+- Factory template, export dimensions, Narrative engine and hashtag rules are unchanged. PWA cache v2260.
+- Syntax and isolated workspace preference tests passed; real Safari/browser visual verification pending.
+
 # V2.2.5 — Narrative Regression Protection
 
 - Restore Narrative Long as initial default and migrate legacy local preset once, preserving CTA, tags, tone and template. Explicit saved v5 selections remain available.
